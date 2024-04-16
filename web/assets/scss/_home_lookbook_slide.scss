@@ -1,0 +1,83 @@
+/* lookbook slide - start
+==================================================================================================== */
+.lookbook_slide {
+	.item {
+		height: 100vh;
+	}
+
+	.slick-dots {
+		top: 50%;
+		right: 40px;
+		width: auto;
+		left: unset;
+		bottom: unset;
+		max-width: unset;
+		position: absolute;
+		display: inline-block;
+		transform: translateY(-50%);
+		li {
+			float: none;
+			display: block;
+			border: 7px solid transparent;
+			&:not(:last-child) {
+				margin: 0px;
+			}
+			button {
+				opacity: 1;
+				width: 10px;
+				height: 10px;
+				border-radius: 0px;
+				background-color: #ffffff;
+			}
+			&.hover,
+			&.slick-active {
+				border: 7px solid #000000;
+				button {
+				}
+			}
+		}
+	}
+
+	.slider_item {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		overflow: hidden;
+		position: relative;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.item_content {
+		padding: 60px;
+	}
+	.title_text {
+		line-height: 1;
+		font-size: 72px;
+		font-weight: 600;
+	}
+	.item_title {
+		line-height: 1;
+		a {
+			color: #ffffff;
+			font-size: 160px;
+			font-weight: 400;
+			font-family: 'Ranting Personal Use';
+			&:hover {
+				color: $lookbook_red;
+			}
+		}
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	.has_2items {
+		.slider_item {
+			height: 50%;
+		}
+	}
+}
+/* lookbook slide - end
+==================================================================================================== */

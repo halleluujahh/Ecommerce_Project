@@ -1,0 +1,86 @@
+#pu{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+#pu-content {
+    width: 50%;
+    height: 40%;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.digit-input {
+    width: calc(16.66% - 5px); /* Adjust width as needed */
+    text-align: center;
+    padding: 10px;
+    margin: 0 2px; /* Adjust margin as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="tel"] {
+    width: 40px;
+    height: 60px;
+    text-align: center;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-group input[type="tel"] {
+    margin-bottom: 10px;
+}
+
+.dimmed-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none;
+}
+.dimmed-overlay.show {
+    display: block;
+}
+.dimmed-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    z-index: 10000;
+    display: none;
+}
+.dimmed-form.show {
+    display: block;
+}

@@ -1,0 +1,308 @@
+/* home supermarket - start
+==================================================================================================== */
+
+/* home supermarket reset - start */
+.home_supermarket {
+	background-color: #f5f6f9;
+	font-family: 'Open Sans', sans-serif;
+	h1,h2,h3,h4,h5,h6 {
+		font-family: 'Oswald', sans-serif;
+	}
+
+	.custom_btn {
+		font-size: 18px;
+		font-weight: 400;
+		padding: 10px 50px;
+		text-transform: uppercase;
+		&.btn_sm {
+			font-size: 16px;
+			padding: 10px 40px;
+		}
+	}
+
+	.carousel_nav {
+		button {
+			width: 54px;
+			height: 54px;
+			color: #7b8186;
+			font-size: 16px;
+			line-height: 52px;
+			border-radius: 100%;
+			border: 3px solid #ededed;
+			background-color: #ffffff;
+			&:hover {
+				color: #ffffff;
+				border-color: $supermarket_red;
+				background-color: $supermarket_red;
+			}
+			&:not(:last-child) {
+				margin-right: 5px;
+			}
+		}
+	}
+}
+/* home supermarket reset - end */
+
+
+/* supermarket slider - start */
+.supermarket_slider {
+	.alldepartments_dropdown {
+		min-height: 620px;
+		margin-top: -50px;
+		background-color: #ffffff;
+		.alldepartments_menulist {
+			>li {
+				>a {
+					padding: 15px 0px;
+				}
+			}
+		}
+	}
+
+	.item {
+		display: flex;
+		padding: 30px;
+		min-height: 570px;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.slick-dots {
+		bottom: 30px;
+		padding-right: 30px;
+		justify-content: flex-end;
+		li {
+			&:not(:last-child) {
+				margin-right: 8px;
+			}
+		}
+		a {
+			width: 8px;
+			height: 8px;
+			display: block;
+			line-height: 1;
+			border-radius: 100%;
+			background-color: #ffffff;
+		}
+		li {
+			&:hover,
+			&.slick-active {
+				a {
+					background-color: $supermarket_red;
+				}
+			}
+		}
+		span {
+			display: none;
+		}
+	}
+
+	.slider_image {
+		max-width: 370px;
+	}
+	.slider_content {
+		max-width: 370px;
+		h4 {
+			color: #252525;
+			font-size: 18px;
+			font-weight: 300;
+			font-family: 'Open Sans', sans-serif;
+		}
+		h3 {
+			color: #252525;
+			font-size: 44px;
+			margin-bottom: 15px;
+		}
+		.item_price {
+			line-height: 1;
+			color: #252525;
+			display: block;
+			font-size: 54px;
+			font-weight: 700;
+			margin-bottom: 30px;
+			font-family: 'Open Sans', sans-serif;
+			sup {
+				line-height: 1;
+				font-size: 30px;
+			}
+			small {
+				font-size: 16px;
+				font-weight: 300;
+			}
+		}
+	}
+}
+/* supermarket slider - end */
+
+
+/* super market policy - start */
+.supermarket_policy {
+	padding: 34.5px 50px;
+	background-color: #ffffff;
+	>ul {
+		margin-left: -15px;
+		margin-right: -15px;
+		>li {
+			flex: 0 0 20%;
+			padding: 15px;
+			max-width: 20%;
+		}
+	}
+}
+
+.supermarket_policy_item {
+	display: flex;
+	align-items: center;
+	.item_icon {
+		margin-right: 12px;
+	}
+	h3 {
+		color: #000000;
+		line-height: 1;
+		font-size: 14px;
+		font-weight: 800;
+		margin-bottom: 5px;
+		font-family: 'Open Sans', sans-serif;
+	}
+	p {
+		line-height: 1;
+		color: #72717b;
+		font-size: 14px;
+		margin-bottom: 0px;
+	}
+}
+/* super market policy - end */
+
+
+/* supermarket deals - start */
+.supermarket_deals_item {
+	max-width: 270px;
+	position: relative;
+	margin: 30px auto 0px;
+	.offer_text {
+		top: 10px;
+		left: 15px;
+		z-index: 1;
+		color: #ff1d25;
+		line-height: 1;
+		font-size: 26px;
+		font-weight: 600;
+		position: absolute;
+	}
+
+	.item_image {
+		display: flex;
+		overflow: hidden;
+		min-height: 250px;
+		border-radius: 6px;
+		margin-bottom: 20px;
+		align-items: center;
+		justify-content: center;
+		background-color: #ffffff;
+		box-shadow: 0px 21px 54px 0px rgba(61, 67, 79, 0.04);
+		img {
+			max-height: 230px;
+			transition: $default_transition;
+		}
+	}
+	&:hover {
+		.item_image {
+			img {
+				opacity: .6;
+			}
+		}
+	}
+
+	.item_title {
+		line-height: 1;
+		margin-bottom: 10px;
+		a {
+			color: #000000;
+			font-size: 24px;
+			font-weight: 600;
+		}
+	}
+	&:hover {
+		.item_title {
+			a {
+				color: $supermarket_red;
+			}
+		}
+	}
+
+	.item_instock {
+		line-height: 1;
+		display: block;
+		color: #6e6e6e;
+		font-size: 15px;
+	}
+}
+/* supermarket deals - end */
+
+
+/* supermarket feature carousel - start */
+.supermarket_feature_carousel {
+	.item {
+		z-index: 1;
+		position: relative;
+		&:before {
+			top: 0px;
+			right: 0px;
+			bottom: 0px;
+			width: 40%;
+			content: '';
+			z-index: -1;
+			position: absolute;
+			background-color: #ffffff;
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+		}
+	}
+
+	.item_price {
+		display: block;
+		line-height: 1;
+		font-size: 42px;
+		font-weight: 700;
+		margin-bottom: 15px;
+		background: -webkit-linear-gradient(90deg, #fe7f00, #fed400);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.sub_title {
+		line-height: 1;
+		font-size: 16px;
+		font-style: italic;
+		margin-bottom: 20px;
+	}
+	.item_title {
+		font-size: 60px;
+		font-weight: 600;
+	}
+
+	.slick-arrow {
+		&:before {
+			border-radius: 100%;
+			background-color: transparent;
+			border: 2px solid transparent;
+		}
+	}
+
+	.slick-prev {
+		left: 80px;
+		&:before {	
+			color: #ffffff;
+			border-color: #ffffff;
+		}
+	}
+	.slick-next {
+		right: 80px;
+		&:before {	
+			color: #ee0000;
+			border-color: #ee0000;
+		}
+	}
+}
+/* supermarket feature carousel - end */
+
+/* home supermarket - end
+==================================================================================================== */

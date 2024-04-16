@@ -1,0 +1,191 @@
+/* home parallax shop - start
+==================================================================================================== */
+
+/* home parallax shop reset - start */
+.home_parallax_shop {
+	color: #181818;
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+	h1,h2,h3,h4,h5,h6 {
+		color: #181818;
+		font-weight: 700;
+		font-family: 'Poppins', sans-serif;
+	}
+
+	::selection {
+		color: #ffffff;
+		background-color: $shop_brown;
+	}
+
+	::-moz-selection {
+		color: #ffffff;
+		background-color: $shop_brown;
+	}
+
+	.custom_btn {
+		font-size: 14px;
+		font-weight: 500;
+		padding: 10px 50px;
+	}
+
+	.carousel_nav {
+		button {
+			width: 60px;
+			height: 60px;
+			color: #181818;
+			font-size: 16px;
+			line-height: 64px;
+			border-radius: 100%;
+			background-color: #e9efef;
+			&:hover {
+				color: #ffffff;
+				background-color: $shop_brown;
+			}
+		}
+	}
+}
+/* home parallax shop reset - end */
+
+
+/* parallax shop deals - start */
+.ps_explore_item {
+	overflow: hidden;
+	position: relative;
+	img {
+		width: 100%;
+		display: block;
+		transition: $default_transition;
+	}
+	&:hover {
+		img {
+			transform: scale(1.07);
+		}
+	}
+	.item_content {
+		top: 50%;
+		right: 0px;
+		z-index: 2;
+		width: 55%;
+		padding: 30px 40px;
+		position: absolute;
+		transform: translateY(-50%);
+	}
+	h3 {
+		line-height: 1;
+		font-size: 90px;
+		font-weight: 800;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+}
+
+.ps_deals_item {
+	overflow: hidden;
+	position: relative;
+	img {
+		width: 100%;
+		display: block;
+		transition: $default_transition;
+	}
+	&:hover {
+		img {
+			transform: scale(1.07);
+		}
+	}
+	.item_content {
+		top: 50%;
+		left: 50%;
+		z-index: 2;
+		width: 65%;
+		padding: 30px 40px;
+		position: absolute;
+		transform: translate(-50%, -50%);
+	}
+	h3 {
+		line-height: 1;
+		font-size: 70px;
+		font-weight: 800;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 20px;
+		margin-bottom: 25px;
+	}
+
+	.countdown_timer {
+		&.content_inbox {
+			li {
+				width: 120px;
+				height: 120px;
+				padding: 42px 10px;
+				border-radius: 100%;
+				background-color: #efefef;
+			}
+		}
+		strong {
+			font-size: 25px;
+			font-weight: 800;
+		}
+		span {
+			font-size: 15px;
+			font-weight: 500;
+		}
+	}
+}
+/* parallax shop deals - end */
+
+
+/* parallax shop slider - start */
+.parallax_shop_slider {
+	.item {
+		min-height: 100vh;
+	}
+
+	.carousel_nav {
+		right: 90px;
+		bottom: 80px;
+		position: absolute;
+		button {
+			background-color: #ffffff;
+		}
+	}
+
+	h4 {
+		line-height: 1;
+		color: #7d7d7d;
+		font-size: 30px;
+		font-weight: 400;
+		margin-bottom: 20px;
+	}
+	h3 {
+		line-height: 1;
+		font-size: 84px;
+		font-weight: 800;
+		margin-bottom: 40px;
+	}
+}
+/* parallax shop slider - end */
+
+
+/* parallax shop big feature - end */
+.ps_big_feature {
+	min-height: 810px;
+	h4 {
+		line-height: 1;
+		font-size: 40px;
+		font-weight: 400;
+		margin-bottom: 25px;
+	}
+	h3 {
+		line-height: 1;
+		font-size: 70px;
+		margin-bottom: 40px;
+	}
+}
+/* parallax shop big feature - end */
+
+/* home parallax shop - end
+==================================================================================================== */

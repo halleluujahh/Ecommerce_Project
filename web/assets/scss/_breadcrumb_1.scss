@@ -1,0 +1,455 @@
+/* breadcrumb - start
+==================================================================================================== */
+
+/* default breadcrumb - start */
+.breadcrumb_section {
+	z-index: 1;
+	min-height: 575px;
+	position: relative;
+	padding: 100px 0px;
+	padding-bottom: 180px;
+	.overlay {
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		z-index: -1;
+		content: '';
+		opacity: .41;
+		position: absolute;
+	}
+}
+
+.page_title {
+	line-height: 1;
+	font-size: 80px;
+	font-weight: 800;
+	margin-bottom: 25px;
+}
+
+.breadcrumb_nav {
+	li {
+		color: #cccccc;
+		font-size: 14px;
+		font-weight: 600;
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 35px;
+			padding-right: 35px;
+		}
+		&:after {
+			top: 50%;
+			width: 2px;
+			right: -1px;
+			height: 14px;
+			content: '';
+			position: absolute;
+			background-color: #cccccc;
+			transform: translateY(-50%);
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	a {
+		color: #ffffff;
+		&:hover {
+			color: $default_red;
+		}
+	}
+}
+/* default breadcrumb - end */
+
+
+/* carparts breadcrumb - start */
+.carparts_breadcrumb {
+	min-height: 490px;
+	padding-bottom: 120px;
+
+	.breadcrumb_nav {
+		li {
+			font-size: 18px;
+		}
+
+		a {
+			&:hover {
+				color: $carparts_red;
+			}
+		}
+	}
+}
+/* carparts breadcrumb - end */
+
+
+/* classic ecommerce breadcrumb - start */
+.classic_ecommerce_breadcrumb {
+	min-height: 750px;
+	padding: 170px 0px;
+	p {
+		color: #262626;
+		font-size: 25px;
+	}
+}
+
+.ce_page_title {
+	color: #262626;
+	line-height: 1;
+	font-size: 70px;
+}
+
+.ce_breadcrumb_nav_wrap {
+	color: #888888;
+	font-size: 15px;
+	font-weight: 700;
+	padding: 19px 0px;
+	border-bottom: 2px solid #eaeaea;
+	a {
+		color: #888888;
+		&:hover {
+			color: $ecommerce_black;
+		}
+	}
+}
+
+.ce_breadcrumb_nav {
+	li {
+		position: relative;
+		&:after {
+			top: 50%;
+			width: 2px;
+			content: '';
+			right: -1px;
+			height: 15px;
+			position: absolute;
+			background-color: #ededed;
+			transform: translateY(-50%);
+		}
+		&:not(:last-child) {
+			margin-right: 20px;
+			padding-right: 20px;
+		}
+		&:last-child {
+			color: $ecommerce_black;
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+/* classic ecommerce breadcrumb - end */
+
+
+/* fashion breadcrumb - start */
+.fashion_breadcrumb {
+	min-height: 620px;
+}
+.f_breadcrumb_content {
+	margin-top: 70px;
+}
+.f_page_title {
+	line-height: 1;
+	font-size: 50px;
+}
+.f_breadcrumb_nav {
+	li {
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 15px;
+			padding-right: 15px;
+		}
+		&:after {
+			top: 50%;
+			right: -3px;
+			content: '/';
+			position: absolute;
+			transform: translateY(-50%);
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+	a {
+		color: #ffffff;
+		&:hover {
+			color: $fashion_red;
+		}
+	}
+}
+/* fashion breadcrumb - end */
+
+
+/* minimal fashion breadcrumb - start */
+.minimal_fashion_breadcrumb {
+	position: relative;
+	.mfb_nav {
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		position: absolute;
+		padding-bottom: 25px;
+	}
+}
+/* minimal fashion breadcrumb - end */
+
+
+/* furniture breadcrumb - start */
+.furniture_breadcrumb {
+	min-height: 400px;
+	padding: 100px 0px;
+	.deco_image {
+		right: 240px;
+		bottom: -100px;
+		max-width: 600px;
+	}
+}
+
+.f2_page_title {
+	font-size: 70px;
+	text-shadow: 10px 0px 1px #b6b5b5;
+}
+
+.f2_breadcrumb_nav_wrap {
+	margin-top: 100px;
+	li {
+		color: #333e48;
+		font-size: 14px;
+		font-weight: 500;
+		&:after {
+			width: auto;
+			right: -4px;
+			height: auto;
+			content: '\f105';
+			font-weight: 400;
+			background-color: transparent;
+			font-family: 'Font Awesome 5 Pro';
+		}
+	}
+	a {
+		color: #333e48;
+		&:hover {
+			opacity: .6;
+		}
+	}
+}
+/* furniture breadcrumb - end */
+
+
+/* gadget breadcrumb - start */
+.gadget_breadcrumb {
+	min-height: 485px;
+	padding-bottom: 130px;
+	border-bottom: 4px solid $gadget_red;
+}
+
+.g_page_title {
+	line-height: 1;
+	font-size: 65px;
+	margin-bottom: 20px;
+}
+
+.g_breadcrumb_nav {
+	li {
+		font-size: 20px;
+		position: relative;
+		font-family: 'Oswald', sans-serif;
+		&:not(:last-child) {
+			margin-right: 15px;
+			padding-right: 15px;
+		}
+		&:after {
+			top: 50%;
+			right: -3px;
+			content: '/';
+			position: absolute;
+			transform: translateY(-50%);
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+	a {
+		color: #ffffff;
+		&:hover {
+			color: $fashion_red;
+		}
+	}
+}
+/* gadget breadcrumb - end */
+
+
+/* modern breadcrumb - start */
+.breadcrumb_section {
+	&.modern_breadcrumb {
+		min-height: auto;
+	}
+}
+/* modern breadcrumb - end */
+
+
+/* lookbook creative breadcrumb - start */
+.lc_breadcrumb {
+	min-height: 730px;
+	.page_title {
+		margin-top: 130px;
+	}
+}
+/* lookbook creative breadcrumb - end */
+
+
+/* medical breadcrumb - start */
+.medical_page_title {
+	line-height: 1;
+	font-size: 60px;
+}
+.medical_breadcrumb_nav {
+	li {
+		color: #000000;
+		font-size: 20px;
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 20px;
+			padding-right: 20px;
+		}
+		&:after {
+			top: 50%;
+			right: -5px;
+			content: '/';
+			position: absolute;
+			transform: translateY(-50%);
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+	a {
+		color: #000000;
+		&:hover {
+			color: $medical_blue;
+		}
+	}
+}
+/* medical breadcrumb - end */
+
+
+/* medical breadcrumb - start */
+.minimal_breadcrumb {
+	min-height: 620px;
+	padding-bottom: 150px;
+}
+.minimal_page_title {
+	font-size: 90px;
+	font-weight: 800;
+}
+/* medical breadcrumb - end */
+
+
+/* motorcycle breadcrumb - start */
+.motorcycle_breadcrumb {
+	min-height: 700px;
+	padding-bottom: 240px;
+	.overlay {
+		opacity: .9;
+	}
+}
+.motorcycle_page_title {
+	line-height: 1;
+	font-size: 100px;
+}
+.motorcycle_breadcrumb_nav {
+	li {
+		font-size: 20px;
+		font-weight: 500;
+		position: relative;
+		&:after {
+			top: 50%;
+			right: -4px;
+			font-weight: 400;
+			content: '\f105';
+			position: absolute;
+			transform: translateY(-50%);
+			font-family: "Font Awesome 5 Pro";
+		}
+		&:not(:last-child) {
+			margin-right: 25px;
+			padding-right: 25px;
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+	a {
+		color: $carparts_red;
+	}
+}
+/* motorcycle breadcrumb - end */
+
+
+/* sports breadcrumb - start */
+.sports_breadcrumb {
+	min-height: 600px;
+	padding-bottom: 220px;
+}
+.sports_page_title {
+	font-size: 100px;
+}
+.sports_breadcrumb_nav_wrap {
+	background-color: #ffffff;
+	box-shadow: 0px 10px 49px 0px rgba(0, 0, 0, 0.15);
+}
+.sports_breadcrumb_nav {
+	li {
+		height: 80px;
+		color: #636363;
+		position: relative;
+		padding: 10px 30px;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+		&:first-child {
+			border-left: 1px solid #f3f4f6;
+			border-right: 1px solid #f3f4f6;
+			&:after {
+				display: none;
+			}
+		}
+		&:not(:last-child) {
+			color: #8799a3;
+		}
+		&:after {
+			top: 50%;
+			right: -3px;
+			content: '\f105';
+			font-weight: 400;
+			position: absolute;
+			transform: translateY(-50%);
+			font-family: 'Font Awesome 5 Pro';
+		}
+		&:last-child {
+			padding-right: 0px;
+			&:after {
+				display: none;
+			}
+		}
+	}
+	a {
+		color: #8799a3;
+		&:hover {
+			color: $sports_red;
+		}
+	}
+}
+/* sports breadcrumb - end */
+
+/* breadcrumb - end
+==================================================================================================== */

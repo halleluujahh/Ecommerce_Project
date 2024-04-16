@@ -1,0 +1,350 @@
+/* section titles - start
+==================================================================================================== */
+
+/* carparts section title - start */
+.carparts_section_title {
+	.title_text {
+		color: #161616;
+		line-height: .9;
+		font-size: 60px;
+	}
+	.sub_title {
+		line-height: 1;
+		font-size: 20px;
+		font-weight: 700;
+		color: $carparts_red;
+		display: inline-block;
+	}
+}
+/* carparts section title - end */
+
+
+/* ecommerce section title - start */
+.ecommerce_section_title {
+	.title_text {
+		color: #141414;
+		font-size: 35px;
+		font-weight: 600;
+	}
+}
+/* ecommerce section title - end */
+
+
+/* furniture section title - start */
+.furniture_section_title {
+	.sub_title {
+		color: #b28266;
+		font-size: 18px;
+		display: inline-block;
+		font-family: 'Roboto', sans-serif;
+	}
+	.title_text {
+		color: #272727;
+		font-size: 70px;
+		line-height: 1.15;
+	}
+}
+/* furniture section title - end */
+
+
+/* modern section title - start */
+.modern_section_title {
+	.sub_title {
+		color: #212121;
+		line-height: 1;
+		font-size: 24px;
+		font-weight: 300;
+		display: inline-block;
+		font-family: 'Oswald', sans-serif;
+	}
+	.title_text {
+		line-height: 1;
+		font-size: 42px;
+		font-weight: 700;
+	}
+}
+/* modern section title - end */
+
+
+/* minimal section title - start */
+.minimal_section_title {
+	.title_text {
+		line-height: 1;
+		font-size: 62px;
+		font-weight: 800;
+		font-family: 'Jost', sans-serif;
+	}
+}
+/* minimal section title - end */
+
+
+/* medical section title - start */
+.medical_section_title {
+	.title_text {
+		line-height: 1;
+		font-size: 44px;
+		font-weight: 700;
+		font-family: 'Jost', sans-serif;
+	}
+	p {
+		font-size: 20px;
+	}
+}
+/* medical section title - end */
+
+
+/* fashion section title - start */
+.fashion_section_title {
+	.title_text {
+		color: #1c1f23;
+		line-height: 1;
+		font-size: 51px;
+		font-weight: 700;
+	}
+	.sub_title {
+		line-height: 1;
+		font-size: 16px;
+		font-weight: 400;
+		color: $fashion_red;
+	}
+}
+/* fashion section title - end */
+
+
+/* lookbook section title - start */
+.lookbook_section_title {
+	.sub_title {
+		line-height: 1;
+		font-size: 20px;
+		font-weight: 400;
+		letter-spacing: 8px;
+		color: $lookbook_red;
+	}
+	.title_text {
+		line-height: 1;
+		font-size: 120px;
+		font-weight: 700;
+	}
+	p {
+		font-size: 20px;
+	}
+}
+/* lookbook section title - end */
+
+
+/* electronic section title - start */
+.electronic_section_title {
+	border: 1px solid #f8f8f8;
+
+	.title_text {
+		color: #101010;
+		font-size: 30px;
+		font-weight: 400;
+		min-height: 100px;
+		padding: 15px 40px;
+		align-items: center;
+		padding-right: 100px;
+		display: inline-flex;
+		clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+		span {
+			width: 40px;
+			height: 40px;
+			color: #101010;
+			font-size: 24px;
+			background: red;
+			line-height: 42px;
+			text-align: center;
+			margin-right: 15px;
+			border-radius: 100%;
+		}
+		strong {
+			font-weight: 700;
+		}
+	}
+}
+/* electronic section title - end */
+
+
+/* supermarket section title - start */
+.supermarket_section_title {
+	.sub_title {
+		color: #b3b3b3;
+		line-height: 1;
+		display: block;
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	.title_text {
+		color: #000000;
+		font-size: 45px;
+		font-weight: 600;
+	}
+}
+/* supermarket section title - end */
+
+
+/* onelook section title - start */
+.onelook_section_title {
+	.title_text {
+		line-height: 1;
+		font-size: 30px;
+		font-weight: 700;
+		span {
+			position: relative;
+			padding-left: 100px;
+			display: inline-block;
+			&:before {
+				top: 50%;
+				left: 0px;
+				height: 1px;
+				content: '';
+				width: 75px;
+				position: absolute;
+				background-color: #ffffff;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}
+/* onelook section title - end */
+
+
+/* fashion minimal section title - start */
+.fm_section_title {
+	.title_text {
+		line-height: .9;
+		font-size: 60px;
+		font-weight: 700;
+	}
+	p {
+		font-size: 25px;
+	}
+}
+/* fashion minimal section title - end */
+
+
+/* motorcycle section title - start */
+.motorcycle_section_title {
+	.title_text {
+		color: #202020;
+		line-height: .9;
+		font-size: 60px;
+		span {
+			color: $carparts_red;
+		}
+	}
+	p {
+		font-size: 20px;
+		font-weight: 500;
+	}
+}
+/* motorcycle section title - end */
+
+
+/* parallax shop section title - start */
+.ps_section_title {
+	.sub_title {
+		line-height: 1;
+		display: block;
+		font-size: 23px;
+	}
+	.title_text {
+		line-height: 1;
+		font-size: 75px;
+	}
+
+	&.size_big {
+		.sub_title {
+			font-size: 36px;
+		}
+		.title_text {
+			font-size: 150px;
+		}
+	}
+}
+/* parallax shop section title - end */
+
+
+/* simple shop section title - start */
+.ss_section_title {
+	.title_text {
+		font-size: 60px;
+	}
+	p {
+		font-size: 20px;
+	}
+}
+/* simple shop section title - end */
+
+
+/* gadget section title - start */
+.gadget_section_title {
+	.sub_title {
+		font-size: 20px;
+		font-weight: 400;
+		align-items: center;
+		display: inline-flex;
+	}
+	.title_text {
+		font-size: 65px;
+	}
+	.line {
+		width: 55px;
+		height: 2px;
+		display: inline-block;
+		&:nth-child(1) {
+			margin-right: 25px;
+		}
+		&:nth-child(2) {
+			margin-left: 25px;
+		}
+	}
+}
+/* gadget section title - end */
+
+
+/* gadget section title - start */
+.sports_section_title {
+	z-index: 1;
+	position: relative;
+	.sub_title {
+		font-size: 20px;
+		color: $sports_red;
+		display: inline-block;
+	}
+	.title_text {
+		line-height: 1;
+		font-size: 80px;
+	}
+	.big_title {
+		top: 50%;
+		left: 0px;
+		right: 0px;
+		z-index: -1;
+		display: block;
+		font-size: 190px;
+		position: absolute;
+		transform: translateY(-50%);
+		font-family: 'Oswald', sans-serif;
+	}
+}
+/* gadget section title - end */
+
+
+/* gadget section title - start */
+.watch_section_title {
+	.sub_title {
+		display: block;
+		line-height: 1;
+		font-size: 30px;
+		color: $watch_red;
+	}
+	.title_text {
+		line-height: 1;
+		font-size: 70px;
+	}
+}
+/* gadget section title - end */
+
+/* section titles - end
+==================================================================================================== */

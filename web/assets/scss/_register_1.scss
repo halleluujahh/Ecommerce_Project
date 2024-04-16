@@ -1,0 +1,98 @@
+/* contact page - start
+==================================================================================================== */
+.reg_form_wrap {
+	margin: auto;
+	max-width: 800px;
+	border-radius: 4px;
+	padding: 80px 100px;
+	background-size: 100%;
+	background-color: #f0f2f1;
+	&.login_form {
+		background-position: left 480px center;
+	}
+	&.signup_form {
+		background-position: left 460px center;
+		.form_item {
+			input {
+				padding: 0px;
+			}
+		}
+	}
+	
+	.reg_form {
+		max-width: 400px;
+	}
+	.form_title {
+		color: #2e2e2e;
+		line-height: 1;
+		font-size: 40px;
+		margin-bottom: 60px;
+	}
+	.small_title_text {
+		color: #686c6e;
+		line-height: 1;
+		font-size: 14px;
+		font-weight: 600;
+	}
+
+	.form_item {
+		input {
+			border: none;
+			padding: 0px;
+			height: 45px;
+			padding-left: 50px;
+			background-color: transparent;
+			border-bottom: 2px solid #cccecd;
+			&:focus {
+				border-color: $default_red;
+			}
+		}
+		label {
+			top: 50%;
+			left: 13px;
+			margin: 0px;
+			font-size: 22px;
+			position: absolute;
+			transform: translateY(-50%);
+		}
+	}
+
+	.forget_pass {
+		float: right;
+		color: #808080;
+		font-size: 13px;
+		font-weight: 500;
+		&:hover {
+			color: $default_red;
+		}
+	}
+
+	button[type=submit] {
+		width: 100%;
+		border-radius: 4px;
+		&:before {
+			border-radius: 4px;
+		}
+	}
+
+	.circle_social_links {
+		a {
+			width: 50px;
+			height: 50px;
+			color: #ffffff;
+			line-height: 52px;
+		}
+	}
+
+	.create_account_btn {
+		color: #2e2e2e;
+		font-size: 20px;
+		font-weight: 700;
+		font-family: 'Jost', sans-serif;
+		&:hover {
+			color: $default_red;
+		}
+	}
+}
+/* contact page - end
+==================================================================================================== */

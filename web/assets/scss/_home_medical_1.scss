@@ -1,0 +1,211 @@
+/* home pages - start
+==================================================================================================== */
+
+/* home minimal reset - start */
+.home_medical {
+	color: #7f8793;
+	font-family: 'Jost', sans-serif;
+
+	h1,h2,h3,h4,h5,h6 {
+		color: #030a0b;
+		font-family: 'Jost', sans-serif;
+	}
+
+	.custom_btn {
+		font-size: 14px;
+		padding: 10px 50px;
+		border-radius: 3px;
+		&:before {
+			border-radius: 3px;
+		}
+	}
+
+	.slick-arrow {
+		width: 55px;
+		height: 55px;
+		border-radius: 0%;
+		&:before {
+			color: #202020;
+			line-height: 57px;
+			background-color: #e6f0ff;
+		}
+		&:hover {
+			&:before {
+				color: #ffffff;
+				background-color: $medical_blue;
+			}
+		}
+	}
+
+	.carousel_nav {
+		button {
+			width: 50px;
+			height: 50px;
+			color: #202020;
+			background-color: #e6f0ff;
+			&:hover {
+				color: #ffffff;
+				background-color: $medical_blue;
+			}
+		}
+	}
+
+	.slick-dots {
+		li {
+			button {
+				background: #000000;
+			}
+		}
+	}
+}
+/* home minimal reset - end */
+
+
+/* slider section - start */
+.medical_slider {
+	.item {
+		padding: 80px 0px;
+		min-height: 700px;
+	}
+	.slider_content {
+		max-width: 480px;
+	}
+	h4 {
+		line-height: 1;
+		font-size: 82px;
+		font-weight: 300;
+		strong {
+			font-weight: 800;
+		}
+	}
+	h3 {
+		font-size: 52px;
+		font-weight: 600;
+	}
+	p {
+		color: #030a0b;
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	.slider_image {
+		float: left;
+		width: 680px;
+		text-align: center;
+	}
+
+	.slick-dots {
+		bottom: 30px;
+		justify-content: flex-end;
+		li {}
+		a {
+			width: 12px;
+			height: 12px;
+			display: block;
+			line-height: 1;
+			border-radius: 100%;
+			background-color: #a2c3b3;
+		}
+		.slick-active {
+			a {
+				background-color: #000000;
+			}
+		}
+		span {
+			display: none;
+		}
+	}
+}
+/* slider section - end */
+
+
+/* medical policy - start */
+.medical_policy_item {
+	display: flex;
+	max-width: 270px;
+	margin-top: 50px;
+	align-items: center;
+	.item_icon {
+		height: 60px;
+		color: #2d2d2d;
+		min-width: 60px;
+		font-size: 18px;
+		line-height: 60px;
+		text-align: center;
+		border-radius: 3px;
+		margin-right: 15px;
+		background-color: #e6f0ff;
+	}
+	h3 {
+		line-height: 1;
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 8px;
+	}
+	p {
+		line-height: 1;
+		margin-bottom: 0px;
+	}
+}
+/* medical policy - end */
+
+
+/* consultation section - start */
+.consultation_image {
+	img {
+		width: 100%;
+		display: block;
+	}
+}
+.consultation_content {
+	margin: auto;
+	max-width: 600px;
+	h2 {
+		font-size: 50px;
+		margin-bottom: 15px;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 500;
+		margin-bottom: 25px;
+	}
+}
+/* consultation section - end */
+
+
+/* consultation section - start */
+.medical_offer_carousel {
+	.item {
+		padding: 50px;
+	}
+
+	.offer_text {
+		line-height: 1;
+		color: #000000;
+		display: block;
+		font-size: 70px;
+		font-weight: 600;
+	}
+	.item_title {
+		line-height: 1;
+		font-size: 50px;
+	}
+	p {
+		color: #000000;
+		font-size: 20px;
+	}
+
+	.slick-dots {
+		left: 50px;
+		bottom: 50px;
+		padding: 0px;
+		display: block;
+		max-width: 100%;
+		transform: unset;
+		position: absolute;
+	}
+}
+/* consultation section - end */
+
+/* home pages - end
+==================================================================================================== */

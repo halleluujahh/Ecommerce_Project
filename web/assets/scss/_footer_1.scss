@@ -1,0 +1,1176 @@
+/* footer - start
+==================================================================================================== */
+
+/* footer section - start
+================================================== */
+.footer_section {
+	.author_link {
+		z-index: 1;
+		position: relative;
+		&:before {
+			width: 0px;
+			left: auto;
+			right: 0px;
+			z-index: -1;
+			bottom: 0px;
+			content: '';
+			height: 1px;
+			position: absolute;
+			background: $default_red;
+			transition: all 0.3s ease-in-out;
+		}
+		&:hover {
+			&:before {
+				left: 0px;
+				width: 100%;
+				right: auto;
+			}
+		}
+	}
+}
+
+.footer_widget_title {
+	font-size: 27px;
+	margin-bottom: 30px;
+}
+
+.footer_bottom {
+	padding: 30px 0px;
+}
+
+
+/* hot line content style - start */
+.footer_electronic_hotline {
+	position: relative;
+	padding-left: 65px;
+	i {
+		left: 0px;
+		left: 0px;
+		color: #ffffff;
+		font-size: 48px;
+		position: absolute;
+	}
+	h4 {
+		color: #0063d1;
+		font-size: 15px;
+		font-weight: 500;
+	}
+	span {
+		color: #ffffff;
+		display: block;
+		line-height: 1;
+		font-size: 26px;
+	}
+}
+/* hot line content style - end */
+
+
+/* footer useful links - start */
+.footer_useful_links {
+	li {
+		line-height: 1;
+		&:not(:last-child) {
+			margin-bottom: 12px;
+		}
+	}
+	a {
+		font-size: 18px;
+		color: $default_color;
+	}
+}
+/* footer useful links - end */
+
+
+/* footer instagram - start */
+.footer_instagram {
+	ul {
+		margin: -3px;
+	}
+	li {
+		padding: 3px;
+		flex: 0 0 33.333%;
+		max-width: 33.333%;
+	}
+	.brand_name {
+		line-height: 1;
+		display: block;
+		font-size: 20px;
+		font-weight: 700;
+		margin-top: 15px;
+		color: $carparts_red;
+		i {
+			margin-right: 5px;
+		}
+	}
+}
+
+.text_instagram {
+	background: -webkit-linear-gradient(#6d23b6, #ac1c8b, #d28e3c);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+/* footer instagram - end */
+
+
+/* footer contact info - start */
+.footer_contact_info {
+	.ul_li_block {
+		li {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.ul_li,
+	.ul_li_right,
+	.ul_li_center {
+		li {
+			&:not(:last-child) {
+				margin-right: 50px;
+			}
+		}
+	}
+}
+/* footer contact info - end */
+
+
+/* footer newsletter - start */
+.footer_newsletter {
+	.form_item {
+		input {
+			height: 60px;
+			padding: 0px 25px;
+		}
+	}
+	.submit_btn {
+		top: 50%;
+		right: 0px;
+		height: 60px;
+		color: #ffffff;
+		min-width: 60px;
+		line-height: 60px;
+		position: absolute;
+		transform: translateY(-50%);
+	}
+}
+/* footer newsletter - end */
+
+
+/* footer recent post - start */
+.footer_recent_post {
+	.electronic_product_small {
+		margin-top: 30px;
+		&:not(:last-child) {
+			margin-bottom: 0px;
+		}
+		.item_image {
+			height: 90px;
+			min-width: 90px;
+			margin-right: 15px;
+			img {
+				max-height: 70px;
+			}
+		}
+		.item_title {
+			a {
+				color: #ffffff;
+				font-size: 15px;
+			}
+		}
+		.item_price {
+			font-size: 15px;
+		}
+	}
+}
+/* footer recent post - end */
+
+
+/* twitter feed - start */
+.twitter_feed {
+	&:not(:last-child) {
+		margin-bottom: 30px;
+	}
+	.admin_name {
+		margin-bottom: 4px;
+		a {
+			display: table;
+			font-size: 20px;
+		}
+	}
+	.admin_title {
+		display: block;
+		line-height: 1;
+		font-size: 15px;
+		font-weight: 700;
+		margin-bottom: 15px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #484848;
+	}
+	p {
+		font-size: 15px;
+		line-height: 1.4;
+		margin-bottom: 15px;
+	}
+	.post_time {
+		line-height: 1;
+		display: block;
+		font-size: 15px;
+		font-weight: 700;
+	}
+}
+/* twitter feed - end */
+
+/* footer section - start
+================================================== */
+
+
+/* default footer - start
+================================================== */
+.default_footer {
+	color: #999999;
+
+	.circle_social_links {
+		a {
+			width: 35px;
+			height: 35px;
+			color: #cccccc;
+			font-size: 14px;
+			line-height: 35px;
+			border-radius: 4px;
+			background-color: #333333;
+			&:hover {
+				color: #ffffff;
+				background-color: $default_red;
+			}
+		}
+	}
+}
+
+.df_widget_title {
+	line-height: 1;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 35px;
+}
+
+.df_contact_info {
+	li {
+		&:not(:last-child) {
+			margin-bottom: 6px;
+		}
+	}
+	i {
+		margin-right: 10px;
+	}
+}
+
+.df_newsletter {
+	.form_item {
+		input {
+			height: 50px;
+			padding: 0px 15px;
+			border-radius: 5px;
+		}
+		.submit_btn {
+			top: 50%;
+			right: 15px;
+			font-size: 20px;
+			position: absolute;
+			transform: translateY(-50%);
+		}
+	}
+}
+/* default footer - end
+================================================== */
+
+
+/* carparts footer - start
+================================================== */
+.carparts_footer {
+	.footer_useful_links {
+		a {
+			color: #bababa;
+			font-size: 18px;
+			font-family: 'Oswald', sans-serif;
+			&:hover {
+				color: $carparts_red;
+			}
+		}
+	}
+}
+
+.footer_carparts_hotline {
+	h4 {
+		line-height: 1;
+		font-size: 18px;
+		font-weight: 300;
+		margin-bottom: 10px;
+		color: $carparts_red;
+		font-family: 'Oswald', sans-serif;
+	}
+	span {
+		display: block;
+		line-height: 1;
+		font-size: 22px;
+		font-weight: 700;
+	}
+}
+/* carparts footer - end
+================================================== */
+
+
+/* ecommerce footer - start
+================================================== */
+.ecommerce_footer {
+	font-size: 17px;
+	.footer_widget_title {
+		font-size: 22px;
+	}
+	.footer_useful_links {
+		li {
+			font-size: 17px;
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+		}
+		a {
+			color: #ffffff;
+			font-size: 17px;
+		}
+	}
+
+	.footer_bottom {
+		min-height: 80px;
+		padding: 15px 0px;
+		border-top: 1px solid rgba(255, 255, 255, 0.2);
+	}
+}
+/* ecommerce footer - end
+================================================== */
+
+
+/* furniture footer - start
+================================================== */
+.furniture_footer {
+	color: #636363;
+	background-color: #191919;
+
+	.footer_newsletter {
+		.form_item {
+			input {
+				color: #ffffff;
+				border-color: #252525;
+				background-color: #252525;
+			}
+		}
+	}
+
+	.footer_useful_links {
+		li {
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+		}
+		a {
+			color: #ffffff;
+			font-size: 16px;
+			&:hover {
+				color: $furniture_brown;
+			}
+		}
+	}
+
+	.footer_contact_info {
+		li {
+			color: #ffffff;
+		}
+		span {
+			color: #636363;
+		}
+	}
+
+	.primary_social_links {
+		a {
+			color: #444444;
+			&:hover {
+				color: #8799a3;
+			}
+		}
+	}
+
+	.footer_bottom {
+		min-height: 100px;
+		border-top: 1px solid #252525;
+	}
+
+	.copyright_text {
+		font-size: 16px;
+		.author_link {
+			font-weight: 400;
+			&:before {
+				background-color: $furniture_brown;
+			}
+		}
+	}
+
+	.payment_methods {
+		float: right;
+	}
+}
+/* furniture footer - end
+================================================== */
+
+
+/* modern footer - start
+================================================== */
+.modern_footer {
+	color: #818181;
+	padding: 0px 100px;
+	background-color: #141414;
+	font-family: 'Oswald', sans-serif;
+	.footer_about {
+		p {
+			margin-bottom: 20px;
+			font-family: 'Poppins', sans-serif;
+		}
+	}
+
+	.footer_widget_area {
+		padding: 80px 0px;
+	}
+
+	.footer_useful_links {
+		a {
+			color: #818181;
+			&:hover {
+				color: #ffffff;
+			}
+		}
+	}
+
+	.copyright_text {
+		padding: 25px 0px;
+		border-top: 1px solid #343434;
+	}
+}
+
+.modern_newsletter {
+	padding: 50px 0px;
+	border-bottom: 1px solid #343434;
+	.custom_btn {
+		background-color: #da0a2c;
+		&:before {
+			background-color: $carparts_red;
+		}
+	}
+
+	input {
+		width: 380px;
+		height: 60px;
+		outline: none;
+		padding: 0px 30px;
+		margin-left: 30px;
+		margin-right: 20px;
+		border: 1px solid #eaeaeb;
+	}
+
+	h3 {
+		font-size: 22px;
+		font-weight: 600;
+		margin-bottom: 0px;
+	}
+}
+/* modern footer - end
+================================================== */
+
+
+/* minimal footer - start
+================================================== */
+.minimal_footer {
+	color: #999999;
+	background-color: #1f1f1f;
+	.footer_widget_title {
+		line-height: 1;
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	.footer_contact_info {
+		li {
+			line-height: 1;
+			color: #ffffff;
+			&:not(:last-child) {
+				margin-bottom: 12px;
+			}
+		}
+		span {
+			color: #999999;
+		}
+	}
+
+	.footer_bottom {
+		background-color: #1a1a1a;
+	}
+
+	.circle_social_links {
+		a {
+			width: 35px;
+			height: 35px;
+			color: #ffffff;
+			line-height: 37px;
+			border-radius: 3px;
+			background-color: rgb(51, 51, 51);
+		}
+	}
+}
+/* minimal footer - end
+================================================== */
+
+
+/* medical footer - start
+================================================== */
+.medical_footer {
+	color: #595959;
+	.footer_widget_area {
+		border-top: 1px solid rgba(255, 255, 255, 0.05);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+	}
+
+	.footer_about {
+		border-left: 1px solid rgba(255, 255, 255, 0.05);
+		border-right: 1px solid rgba(255, 255, 255, 0.05);
+	}
+
+	.footer_widget {
+		padding: 60px 15px;
+	}
+
+	.footer_useful_links {
+		li {
+			&:not(:last-child) {
+				margin-bottom: 16px;
+			}
+		}
+		a {
+			&:hover {
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+.medical_contact_info {
+	li {
+		display: flex;
+		align-items: center;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+	.item_icon {
+		width: 60px;
+		height: 60px;
+		color: #03b4f7;
+		font-size: 22px;
+		line-height: 62px;
+		text-align: center;
+		margin-right: 20px;
+		border-radius: 100%;
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+	h4 {
+		line-height: 1;
+		font-size: 22px;
+		font-weight: 600;
+		margin-bottom: 5px;
+	}
+	p {
+		font-size: 16px;
+		margin-bottom: 0px;
+	}
+}
+/* medical footer - end
+================================================== */
+
+
+/* fashion footer - start
+================================================== */
+.fashion_instagram {
+	li {
+		width: 16.666%;
+	}
+	img {
+		width: 100%;
+		display: block;
+		transition: $default_transition;
+	}
+	a {
+		display: block;
+		overflow: hidden;
+		background-color: #000000;
+		&:hover {
+			img {
+				opacity: .3;
+				transform: scale(1.07);
+			}
+		}
+	}
+}
+
+.fashion_footer {
+	.footer_bottom {
+		padding: 60px 0px;
+	}
+	.copyright_text {
+		font-family: 'Oswald', sans-serif;
+	}
+}
+/* fashion footer - end
+================================================== */
+
+
+/* lookbook slide footer - start
+================================================== */
+.lookbook_slide_footer {
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 999;
+	position: fixed;
+	padding-bottom: 35px;
+}
+/* lookbook slide footer - end
+================================================== */
+
+
+/* electronic footer - start
+================================================== */
+.electronic_footer {
+	.footer_widget_title {
+		font-size: 24px;
+		font-weight: 500;
+	}
+
+	.footer_widget_area {
+		padding: 80px 0px;
+		background-color: #171717;
+	}
+
+	.footer_electronic_hotline {
+		h4 {
+			color: #0063d1;
+		}
+	}
+
+	.circle_social_links {
+		a {
+			color: #ffffff;
+			border-radius: 0px;
+			background-color: #282828;
+			&:hover {
+				color: #ffffff;
+				background-color: $electronic_blue;
+			}
+		}
+	}
+
+	.footer_useful_links {
+		li {
+			&:not(:last-child) {
+				margin-bottom: 18px;
+			}
+		}
+		a {
+			color: #dddddd;
+			font-size: 16px;
+			&:hover {
+				color: $electronic_blue;
+			}
+		}
+	}
+
+	.footer_bottom {}
+
+	.copyright_text {
+		font-size: 15px;
+		color: #ffffff;
+	}
+}
+/* electronic footer - end
+================================================== */
+
+
+/* supermarket footer - end
+================================================== */
+.supermarket_footer {
+	.footer_widget_title {
+		color: #333e48;
+		font-size: 23px;
+		position: relative;
+		padding-bottom: 15px;
+		&:before {
+			left: 0px;
+			bottom: 0px;
+			height: 1px;
+			content: '';
+			width: 32px;
+			position: absolute;
+			background-color: $supermarket_red;
+		}
+	}
+
+	.footer_useful_links {
+		li {
+			position: relative;
+			&:not(:last-child) {
+				margin-bottom: 20px;
+				padding-bottom: 20px;
+				border-bottom: 1px solid #ededed;
+			}
+			&:before {
+				left: 0px;
+				height: 1px;
+				width: 15px;
+				bottom: -1px;
+				content: '';
+				position: absolute;
+				background-color: $supermarket_red;
+			}
+			&:last-child {
+				&:before {
+					display: none;
+				}
+			}
+		}
+		a {
+			color: #333e48;
+			font-size: 15px;
+			&:hover {
+				color: $supermarket_red;
+			}
+		}
+	}
+
+	.supermarket_product_small {
+		display: block;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+			padding-bottom: 30px;
+			border-bottom: 1px solid #ededed;
+		}
+		.item_title {
+			a {
+				line-height: 1;
+				display: block;
+				font-size: 18px;
+			}
+		}
+	}
+
+	.form_item {
+		input {
+			height: 60px;
+			border-radius: 45px;
+		}
+		.submit_btn {
+			top: 50%;
+			right: 0px;
+			height: 60px;
+			color: #ffffff;
+			line-height: 60px;
+			padding: 0px 35px;
+			text-align: center;
+			position: absolute;
+			margin-right: -1px;
+			background-color: #191e22;
+			transform: translateY(-50%);
+			border-top-right-radius: 45px;
+			border-bottom-right-radius: 45px;
+		}
+	}
+
+	.footer_electronic_hotline {
+		display: table;
+		margin: 0px auto;
+		i {
+			color: $supermarket_red;
+		}
+	}
+
+	.circle_social_links {
+		a {
+			width: 50px;
+			height: 50px;
+			color: #ffffff;
+			line-height: 50px;
+			background-color: rgba(255, 255, 255, 0.1);
+			&:hover {
+				color: #ffffff;
+				background-color: $supermarket_red;
+			}
+		}
+	}
+}
+
+.supermarket_footer_contact {
+	li {
+		display: flex;
+		font-size: 15px;
+		align-items: center;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid #ededed;
+		}
+	}
+	.item_icon {
+		color: #ffffff;
+		min-width: 35px;
+		min-height: 35px;
+		line-height: 35px;
+		text-align: center;
+		margin-right: 20px;
+		border-radius: 100%;
+		background-color: $supermarket_red;
+	}
+}
+/* supermarket footer - end
+================================================== */
+
+
+/* fashion minimal footer - start
+================================================== */
+.fashion_minimal_footer {
+	color: #c7cae9;
+	padding-top: 80px;
+	position: relative;
+	.backtotop {
+		top: 0px;
+		left: 50%;
+		height: 50px;
+		width: 225px;
+		line-height: 1;
+		box-shadow: none;
+		border-radius: 0px;
+		text-align: center;
+		position: absolute;
+		z-index: 1;
+		background-size: auto;
+		transform: translateX(-50%);
+		.scroll {
+			color: #393d72;
+		}
+	}
+	.footer_widget_title {
+		font-size: 24px;
+	}
+
+	.footer_useful_links {
+		i {
+			margin-right: 5px;
+			color: $fashion2_red;
+		}
+		a {
+			color: #c7cae9;
+			&:hover {
+				color: $fashion2_red;
+			}
+		}
+	}
+
+	.footer_bottom {
+		padding: 50px 0px;
+		border-top: 1px solid rgba(255, 255, 255, 0.05);
+	}
+
+	.circle_social_links {
+		margin-bottom: 25px;
+		a {
+			width: 55px;
+			height: 55px;
+			color: #ffffff;
+			line-height: 59px;
+			background-color: rgba(255, 255, 255, 0.08);
+			&:hover {
+				color: #ffffff;
+				background-color: $fashion2_red;
+			}
+		}
+	}
+}
+
+.fm_footer_newsletter {
+	.form_item {
+		margin-bottom: 15px;
+		input {
+			height: 70px;
+			padding: 0px 25px;
+		}
+	}
+	.submit_btn {
+		width: 100%;
+		height: 70px;
+		display: block;
+		color: #ffffff;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 70px;
+		padding: 0px 30px;
+		text-align: center;
+		background-color: $fashion2_red;
+		&:hover {
+			background-color: #000000;
+		}
+	}
+}
+/* fashion minimal footer - end
+================================================== */
+
+
+/* motorcycle footer - start
+================================================== */
+.motorcycle_footer {
+	color: #787878;
+	.footer_widget_area {
+		background-position: left center;
+	}
+
+	.footer_widget_title {
+		color: #787878;
+		font-size: 20px;
+	}
+
+	.footer_useful_links {
+		a {
+			color: #ffffff;
+			&:hover {
+				color: $carparts_red;
+			}
+		}
+	}
+
+	.twitter_feed {
+		.admin_name {
+			a {
+				color: #ffffff;
+				&:hover {
+					color: $carparts_red;
+				}
+			}
+		}
+	}
+
+	.footer_contact_info {
+		li {
+			font-size: 18px;
+			font-weight: 700;
+		}
+		span {
+			color: #ffffff;
+		}
+	}
+
+	.circle_social_links {
+		a {
+			color: #ffffff;
+			font-size: 15px;
+			line-height: 49px;
+			background-color: transparent;
+			&:hover {
+				color: #ffffff;
+				background-color: $carparts_red;
+			}
+		}
+	}
+
+	.copyright_text {
+		font-weight: 700;
+	}
+}
+/* motorcycle footer - end
+================================================== */
+
+
+/* simple shop footer - start
+================================================== */
+.simple_shop_footer {
+	color: #212121;
+	margin-top: -185px;
+	padding-top: 185px;
+	.social_title {
+		font-size: 20px;
+	}
+	.circle_social_links {
+		a {
+			color: #ffffff;
+			background-color: #000000;
+			&:hover {
+				color: #ffffff;
+				background-color: $shop_red;
+			}
+		}
+	}
+
+	.footer_widget_title {
+		font-size: 22px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	hr {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		border-top: 1px solid #e5e5e5;
+	}
+
+	.footer_useful_links {
+		li {
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+		a {
+			color: #212121;
+			&:hover {
+				color: $shop_red;
+			}
+		}
+	}
+
+	.electronic_product_small {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+		.item_image {
+			border: none;
+			height: 80px;
+			min-width: 115px;
+			margin-right: 15px;
+		}
+		.item_title {
+			line-height: 1;
+			margin-bottom: 2px;
+			a {
+				color: #212121;
+				font-size: 18px;
+			}
+		}
+		&:hover {
+			.item_title {
+				a {
+					color: $shop_red;
+				}
+			}
+		}
+		.rating_star {
+			> li {
+				color: $shop_red;
+				font-size: 10px;
+			}
+		}
+		.item_price {
+			font-size: 16px;
+			font-weight: 500;
+		}
+	}
+}
+/* simple shop footer - end
+================================================== */
+
+
+/* gadget footer - start
+================================================== */
+.gadget_footer {
+	.footer_widget_area {
+		padding-top: 150px;
+		padding-bottom: 100px;
+	}
+	a {
+		color: #d4d4d4;
+		&:hover {
+			color: $gadget_red;
+		}
+	}
+
+	.footer_bottom {
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+	}
+}
+
+.g_footer_taglist {
+	ul {
+		margin: -10px;
+	}
+	li {
+		padding: 10px;
+	}
+	a {
+		display: block;
+		line-height: 1;
+	}
+}
+/* gadget footer - end
+================================================== */
+
+
+/* sports footer - start
+================================================== */
+.sports_footer_contact {
+	li {
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+	.icon {
+		float: left;
+		width: 50px;
+		height: 50px;
+		margin-right: 20px;
+		color: $sports_red;
+		align-items: center;
+		border-radius: 100%;
+		display: inline-flex;
+		justify-content: center;
+		background-color: rgba(255, 255, 255, 0.05);
+	}
+}
+/* sports footer - end
+================================================== */
+
+
+/* watch footer - start
+================================================== */
+.watch_footer {
+	.circle_social_links {
+		a {
+			color: #ffffff;
+			font-size: 14px;
+			border: 1px solid #ffffff;
+			background-color: transparent;
+			&:hover {
+				color: #ffffff;
+				border-color: $watch_red;
+				background-color: $watch_red;
+			}
+		}
+	}
+
+	.footer_useful_links {
+		a {
+			color: #ffffff;
+			&:hover {
+				color: $watch_red;
+			}
+		}
+	}
+
+	.footer_bottom {
+		border-top: 1px solid rgba(255, 255, 255, 0.05);
+	}
+}
+/* watch footer - end
+================================================== */
+
+/* footer - end
+==================================================================================================== */

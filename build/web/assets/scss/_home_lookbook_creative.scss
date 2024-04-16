@@ -1,0 +1,176 @@
+/* home lookbook creative - start
+==================================================================================================== */
+
+/* home reset - start */
+.home_lookbook_creative {
+	color: #555555;
+	font-family: 'Oswald', sans-serif;
+	h1,h2,h3,h4,h5,h6 {
+		color: #151515;
+		font-family: 'Oswald', sans-serif;
+	}
+
+	.custom_btn {
+		font-size: 15px;
+		font-weight: 600;
+		padding: 10px 50px;
+	}
+
+	.slick-arrow {
+		width: 60px;
+		height: 60px;
+		border-radius: 0px;
+		&:before {
+			color: #ffffff;
+			font-size: 18px;
+			line-height: 60px;
+			background-color: #1a1a1c;
+		}
+		&:hover {
+			&:before {
+				color: #ffffff;
+				background-color: $lookbook_red;
+			}
+		}
+	}
+
+	.carousel_nav {
+		button {
+			font-size: 18px;
+			background-color: #000000;
+			&:hover {
+				color: #ffffff;
+				background-color: $lookbook_red;
+			}
+		}
+	}
+}
+/* home reset - end */
+
+
+/* slider section - start */
+.lookbook_creative_slider {
+	.item {
+		min-height: 100vh;
+	}
+	.slick-progress {
+		top: unset;
+		bottom: 0px;
+		span {
+			background-color: rgba(255, 255, 255, 0.08);
+		}
+	}
+
+	.carousel_nav {
+		button,
+		button {
+			width: auto;
+			height: auto;
+			color: #555555;
+			font-size: 14px;
+			font-weight: 300;
+			padding: 10px 25px;
+			border-radius: 0px;
+			text-align: center;
+			display: inline-block;
+			background-color: #ffffff;
+			&:hover {
+				color: #ffffff;
+				background-color: $lookbook_red;
+			}
+			&:nth-child(1) {
+				left: 0px;
+			}
+			&:nth-child(2) {
+				right: 0px;
+			}
+			span {
+				line-height: 1;
+				display: block;
+				letter-spacing: 3px;
+				&:not(:last-child) {
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+
+	.slider_content {
+		margin: auto;
+		max-width: 600px;
+		margin-right: 0px;
+	}
+
+	h4 {
+		line-height: 1;
+		font-size: 20px;
+		font-weight: 400;
+		padding: 10px 35px;
+		letter-spacing: 8px;
+		color: $lookbook_red;
+		display: inline-block;
+		background-image: linear-gradient(90deg, transparent, rgba(255, 0, 0, 0.2), transparent);
+	}
+	h3 {
+		line-height: 1;
+		font-size: 120px;
+		font-weight: 700;
+		margin-bottom: 15px;
+	}
+	p {
+		color: #858585;
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+}
+/* slider section - end */
+
+
+/* feature section - start */
+.lookbook_feature_fullwidth {
+	min-height: 800px;
+	p {
+		max-width: 600px;
+	}
+}
+
+.lookbook_collection_content {
+	.lookbook_section_title {
+		margin: auto;
+		max-width: 430px;
+	}
+	.collection_list {
+		margin-top: 50px;
+		padding-top: 50px;
+		border-top: 1px solid #151515;
+		li {
+			line-height: 1;
+			position: relative;
+			padding-left: 22px;
+			&:not(:last-child) {
+				margin-bottom: 17px;
+			}
+			&:before {
+				top: 6px;
+				left: 0px;
+				content: '';
+				width: 9px;
+				height: 9px;
+				position: absolute;
+				background-color: $lookbook_red;
+			}
+		}
+		a {
+			color: #848181;
+			font-size: 20px;
+			font-weight: 300;
+			&:hover {
+				color: $lookbook_red;
+			}
+		}
+	}
+}
+/* feature section - end */
+
+/* home lookbook creative - end
+==================================================================================================== */

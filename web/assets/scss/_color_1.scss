@@ -1,0 +1,131 @@
+/* default colors - start
+==================================================================================================== */
+
+/* bg color - start */
+.bg_white {
+	background-color: #ffffff;
+}
+.bg_black {
+	background-color: #000000;
+}
+.bg_default_black {
+	background-color: $default_black;
+}
+.bg_default_red {
+	background-color: $default_red;
+}
+
+.bg_danger {
+	background-color: #da0a2c;
+}
+.bg_secondary {
+	background-color: #8799a3;
+}
+.bg_success {
+	background-color: #39b54a;
+}
+
+.bg_carparts_red {
+	background-color: $carparts_red;
+}
+.bg_furniture_brown {
+	background-color: $furniture_brown;
+}
+.bg_modern_red {
+	background-color: $modern_red;
+}
+.bg_medical_blue {
+	background-color: $medical_blue;
+}
+.bg_fashion_red {
+	background-color: $fashion_red;
+}
+.bg_fashion2_red {
+	background-color: $fashion2_red;
+}
+.bg_lookbook_red {
+	background-color: $lookbook_red;
+}
+.bg_electronic_blue {
+	background-color: $electronic_blue;
+}
+.bg_supermarket_red {
+	background-color: $supermarket_red;
+}
+.bg_onelook_orange {
+	background-color: $onelook_orange;
+}
+.bg_onelook_red {
+	background-color: $onelook_red;
+}
+.bg_onelook_red {
+	background-color: $onelook_red;
+}
+.bg_shop_brown {
+	background-color: $shop_brown;
+}
+.bg_shop_red {
+	background-color: $shop_red;
+}
+.bg_gadget_red {
+	background-color: $gadget_red;
+}
+.bg_story_green {
+	background-color: $story_green;
+}
+.bg_story_black {
+	background-color: $story_black;
+}
+.bg_sports_red {
+	background-color: $sports_red;
+}
+.bg_watch_red {
+	background-color: $watch_red;
+}
+.bg_leafgreen {
+	background: $leafgreen;
+}
+/* bg color - end */
+
+
+/* overlay bg color - start */
+.black_overlay {
+	z-index: 1;
+	position: relative;
+	&:before {
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		z-index: -1;
+		content: '';
+		opacity: 0.749;
+		position: absolute;
+	}
+}
+
+.black_overlay {
+	&:before {
+		background-color: #272323;
+	}
+}
+/* overlay bg color - end */
+
+
+/* product btn bg color - start */
+.pbg_brown {
+	background-color: #d8a15f;
+}
+.pbg_olivegreen {
+	background-color: #647242;
+}
+.pbg_gray {
+	background-color: #e8e8e8;
+}
+.pbg_lightgreen {
+	background-color: #c9da0f;
+}
+/* product btn bg color - end */
+
+/* default colors - end
+==================================================================================================== */

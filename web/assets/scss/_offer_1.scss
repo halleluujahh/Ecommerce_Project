@@ -1,0 +1,354 @@
+/* offers - start
+==================================================================================================== */
+
+/* offer section - start */
+.offer_fullimage {
+	overflow: hidden;
+	position: relative;
+	>img {
+		width: 100%;
+		display: block;
+		transition: $default_transition;
+	}
+	&:hover {
+		>img {
+			transform: scale(1.07);
+		}
+	}
+}
+/* offer section - end */
+
+
+/* ce(classic ecommerce) offer - start */
+.ce_offer_fullimage {
+	.item_content {
+		top: 50%;
+		left: 50%;
+		z-index: 2;
+		max-width: 380px;
+		position: absolute;
+		transform: translate(-50%, -50%);
+	}
+	.item_title {
+		font-size: 48px;
+		font-weight: 600;
+	}
+}
+
+.ce_offer_fullimage2 {
+	.item_content {
+		top: 50%;
+		right: 0px;
+		max-width: 450px;
+		padding: 30px 50px;
+		position: absolute;
+		transform: translateY(-50%);
+	}
+	.item_title {
+		font-size: 54px;
+		font-weight: 600;
+	}
+	p {
+		font-size: 20px;
+		line-height: 1.5;
+	}
+}
+/* ce(classic ecommerce) offer - end */
+
+
+/* modern advertisement - start */
+.modern_advertisement {
+	display: flex;
+	min-height: 350px;
+	.item_content {
+		padding: 50px;
+		max-width: 430px;
+	}
+	h4 {
+		line-height: 1;
+		font-size: 24px;
+		font-weight: 300;
+	}
+	h3 {
+		line-height: 1;
+		font-size: 42px;
+		font-weight: 700;
+	}
+}
+/* modern advertisement - end */
+
+
+/* minimal advertisement - start */
+.minimal_advertisement {
+	.item_image {
+		margin: -55px 0px -10px -67px;
+	}
+
+	.title_text {
+		font-size: 56px;
+		font-weight: 600;
+		margin-bottom: 25px;
+	}
+	p {
+		font-size: 500;
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
+}
+/* minimal advertisement - end */
+
+
+/* fashion advertisement - start */
+.fashion_advertisement {
+	min-height: 500px;
+	position: relative;
+	.item_content {
+		top: 50%;
+		left: 40%;
+		width: 500px;
+		padding: 0px 40px;
+		position: absolute;
+		transform: translateY(-50%);
+	}
+
+	.video_btn {
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		.play_btn {
+			margin-bottom: 20px;
+		}
+		p {
+			font-size: 18px;
+			font-weight: 500;
+			letter-spacing: 2px;
+		}
+	}
+}
+/* fashion advertisement - end */
+
+
+/* supermarket advertisement - start */
+.sm_offer_item {
+	display: flex;
+	min-height: 170px;
+	position: relative;
+	img {
+		object-fit: cover;
+	}
+	.item_content {
+		top: 50%;
+		left: 0px;
+		padding: 30px;
+		max-width: 300px;
+		position: absolute;
+		transform: translateY(-50%);
+	}
+	.item_title {
+		font-size: 16px;
+		font-weight: 500;
+		margin-bottom: 10px;
+		font-family: 'Poppins', sans-serif;
+	}
+	.item_price {
+		display: block;
+		line-height: 1;
+		margin-bottom: 20px;
+	}
+	.text_btn {
+		span {
+			font-size: 15px;
+		}
+	}
+}
+
+.supermarket_slider {
+	.supermarket_advertisement_item {
+		padding: 20px 30px;
+	}
+}
+
+.supermarket_advertisement_2 {
+	display: flex;
+	min-height: 354px;
+	position: relative;
+	img {
+		object-fit: cover;
+	}
+	.item_content {
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		z-index: 1;
+		padding: 20px;
+		color: #ffffff;
+		position: absolute;
+	}
+	span {
+		font-size: 12px;
+		padding: 5px 10px;
+		margin-bottom: 5px;
+		display: inline-block;
+		background-color: rgba(0, 78, 163, 0.4);
+	}
+	.item_title {
+		font-size: 24px;
+		font-weight: 800;
+	}
+	.custom_btn {
+		font-size: 14px;
+		padding: 18px 30px;
+	}
+}
+
+.supermarket_advertisement_carousel {
+	.carousel_nav {
+		right: 30px;
+		bottom: 30px;
+		position: absolute;
+		button {
+			width: 35px;
+			border: none;
+			height: 35px;
+			color: #191919;
+			font-size: 14px;
+			line-height: 37px;
+		}
+	}
+}
+
+.supermarket_advertisement_3 {
+	max-width: 370px;
+	position: relative;
+	img {
+		width: 100%;
+		display: block;
+	}
+	.item_content {
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		z-index: 1;
+		padding: 30px;
+		position: absolute;
+	}
+
+	.item_title {
+		font-size: 24px;
+		font-style: italic;
+		margin-bottom: 20px;
+		span {
+			display: block;
+			font-size: 18px;
+		}
+	}
+	.item_price {
+		display: block;
+		line-height: 1;
+		font-size: 50px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	.custom_btn {
+		font-size: 14px;
+		padding: 18px 30px;
+	}
+}
+/* supermarket advertisement - end */
+
+
+/* fashion minimal offer - start */
+.fm_offer_item {
+	overflow: hidden;
+	margin-top: 30px;
+	position: relative;
+	&.has_border {
+		border: 4px solid #000000;
+	}
+	img {
+		width: 100%;
+		display: block;
+		transition: $default_transition;
+	}
+	&:hover {
+		img {
+			transform: scale(1.05);
+		}
+	}
+	.item_content {
+		left: 0px;
+		padding: 40px;
+		position: absolute;
+	}
+	.position_top {
+		top: 0px;
+	}
+	.position_bottom {
+		bottom: 0px;
+	}
+	.item_title {
+		font-size: 40px;
+		margin-bottom: 15px;
+	}
+
+	.item_price {
+		display: block;
+		line-height: 1;
+		font-size: 25px;
+		margin-bottom: 25px;
+	}
+}
+/* fashion minimal offer - end */
+
+
+/* parallax shop offer - start */
+.ps_offer_item {
+	overflow: hidden;
+	position: relative;
+	img {
+		width: 100%;
+		display: block;
+		transition: $default_transition;
+	}
+	&:hover {
+		img {
+			transform: scale(1.07);
+		}
+	}
+
+	.item_content {
+		top: 50%;
+		left: 50%;
+		z-index: 2;
+		width: 80%;
+		padding: 60px 50px;
+		position: absolute;
+		transform: translate(-50%, -50%);
+	}
+	h4 {
+		line-height: 1;
+		font-size: 30px;
+		font-weight: 400;
+		margin-bottom: 20px;
+	}
+	h3 {
+		line-height: 1;
+		font-size: 40px;
+		margin-bottom: 20px;
+	}
+	span {
+		line-height: 1;
+		display: block;
+		font-size: 36px;
+		font-weight: 300;
+		margin-bottom: 35px;
+	}
+	.abtn_wrap {
+		margin-bottom: -30px;
+	}
+}
+/* parallax shop offer - end */
+
+/* offers - end
+==================================================================================================== */

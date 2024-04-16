@@ -1,0 +1,935 @@
+/* home motorcycle - start
+==================================================================================================== */
+
+/* home motorcycle reset - start */
+.home_motorcycle {
+	color: #202020;
+	font-size: 18px;
+	font-family: 'Rajdhani';
+	h1,h2,h3,h4,h5,h6 {
+		color: #202020;
+		font-weight: 700;
+		font-family: 'Rajdhani';
+	}
+
+	::selection {
+		color: #ffffff;
+		background-color: $carparts_red;
+	}
+
+	::-moz-selection {
+		color: #ffffff;
+		background-color: $carparts_red;
+	}
+
+	.custom_btn {
+		font-size: 18px;
+		padding: 10px 50px;
+		&.btn_sm {
+			font-size: 16px;
+			padding: 10px 35px;
+		}
+	}
+
+	.carousel_nav {
+		button {
+			width: 45px;
+			height: 45px;
+			color: #262626;
+			font-size: 15px;
+			line-height: 47px;
+			border-radius: 0px;
+			background-color: #efefef;
+			&:hover {
+				color: #ffffff;
+				background-color: $carparts_red;
+			}
+		}
+	}
+}
+/* home motorcycle reset - end */
+
+
+/* motorcycle slider - start */
+.motorcycle_slider {
+	.item {
+		z-index: 1;
+		min-height: 100vh;
+		position: relative;
+		background-color: #ffffff;
+		background-position: center bottom 100px;
+	}
+	.overlay {
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 100px;
+		content: '';
+		opacity: .9;
+		z-index: -1;
+		position: absolute;
+	}
+	.slider_content {
+		z-index: 1;
+	}
+	h3 {
+		line-height: 1;
+		font-size: 100px;
+		margin-bottom: 15px;
+		span {
+			color: $carparts_red;
+		}
+	}
+	p {
+		margin-bottom: 40px;
+	}
+
+	.slider_image {
+		right: 70px;
+		bottom: 0px;
+		max-width: 900px;
+		position: absolute;
+	}
+
+	.carousel_nav {
+		left: 50%;
+		bottom: 78px;
+		position: absolute;
+		padding-right: 200px;
+		transform: translateX(-50%);
+		button {
+			color: #ffffff;
+			background-color: $carparts_red;
+			&:hover {
+				color: #ffffff;
+				background-color: #000000;
+			}
+		}
+	}
+
+	.slide_count_wrap {
+		left: 0px;
+		z-index: 1;
+		bottom: 130px;
+		color: #ffffff;
+		font-size: 20px;
+		margin-left: 45px;
+		position: absolute;
+		padding-left: 100px;
+		&:before {
+			top: 50%;
+			left: 0px;
+			width: 85px;
+			height: 1px;
+			content: '';
+			line-height: 1;
+			position: absolute;
+			transform: translateY(-50%);
+			background-color: $carparts_red;
+		}
+	}
+}
+/* motorcycle slider - end */
+
+
+/* motorcycle category - start */
+.motorcycle_category_group {
+	border: 1px solid #ededed;
+	li {
+		width: 33.333%;
+	}
+}
+.motorcycle_category_item {
+	padding: 30px;
+	display: block;
+	border: 1px solid #ededed;
+	.item_image {
+		height: 270px;
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		justify-content: center;
+	}
+	img {
+		max-height: 250px;
+		transition: $default_transition;
+	}
+	&:hover {
+		img {
+			transform: scale(1.05);
+		}
+	}
+
+	.item_type,
+	.item_title {
+		display: block;
+		line-height: 1;
+	}
+
+	.item_type {
+		font-size: 24px;
+		margin-bottom: 15px;
+		color: $carparts_red;
+	}
+	.item_title {
+		color: #161616;
+		font-size: 32px;
+		font-weight: 700;
+	}
+}
+/* motorcycle category - end */
+
+
+/* motorcycle deals - start */
+.motorcycle_deals_carousel {
+	.carousel_nav {
+		button {
+			top: 50%;
+			width: 140px;
+			height: 140px;
+			overflow: visible;
+			position: absolute;
+			align-items: center;
+			border-radius: 100%;
+			display: inline-flex;
+			justify-content: center;
+			background-color: #e6e6e6;
+			transform: translateY(-50%);
+			&:first-child {
+				left: 50px;
+			}
+			&:last-child {
+				right: 50px;
+			}
+
+		}
+		img {
+			max-height: 120px;
+		}
+	}
+	.item_title {
+		line-height: 1;
+		font-size: 100px;
+		span {
+			color: $carparts_red;
+		}
+	}
+	p {
+		margin-bottom: 30px;
+	}
+	.wrap_title {
+		line-height: 1;
+		font-size: 20px;
+		font-weight: 700;
+		position: relative;
+		margin-right: 15px;
+		padding-right: 100px;
+		display: inline-block;
+		&:after {
+			top: 50%;
+			right: 0px;
+			height: 2px;
+			content: '';
+			width: 85px;
+			position: absolute;
+			transform: translateY(-50%);
+			background-color: $carparts_red;
+			box-shadow: 0px 2px 7px 0px rgba(237, 29, 36, 0.51);
+		}
+	}
+	.countdown_wrap {
+		display: flex;
+		align-items: center;
+	}
+	.countdown_timer {
+		&.timein_box {
+			text-align: center;
+			text-transform: uppercase;
+			li {
+				&:not(:last-child) {
+					margin-right: 15px;
+				}
+			}
+			strong {
+				height: 50px;
+				color: #ffffff;
+				min-width: 50px;
+				line-height: 52px;
+				padding: 0px 10px;
+				margin-bottom: 10px;
+				border-radius: 100%;
+				background-color: $carparts_red;
+			}
+			span {
+				color: #888888;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+.motorcycle_deals_carousel2 {
+	.item {
+		padding: 80px 100px;
+	}
+	.carousel_nav {
+		button {
+			width: 90px;
+			bottom: 25px;
+			height: 90px;
+			display: flex;
+			position: absolute;
+			align-items: center;
+			justify-content: center;
+			background-color: #ffffff;
+			&:nth-child(1) {
+				left: 25px;
+			}
+			&:nth-child(2) {
+				right: 25px;
+			}
+			img {
+				margin: auto;
+				max-height: 60px;
+			}
+			&:hover {
+				background-color: #ffffff;
+				span {
+					opacity: 1;
+				}
+			}
+		}
+		span {
+			top: 50%;
+			left: 50%;
+			z-index: 1;
+			opacity: 0;
+			width: 35px;
+			height: 35px;
+			display: flex;
+			color: #ffffff;
+			font-size: 16px;
+			position: absolute;
+			align-items: center;
+			justify-content: center;
+			transition: $default_transition;
+			background-color: $carparts_red;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	.item_image {
+		min-height: 500px;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+		img {
+			max-height: 450px;
+		}
+	}
+
+	.item_title {
+		line-height: 1;
+		font-size: 75px;
+	}
+	p {
+		font-size: 18px;
+	}
+
+	.countdown_timer {
+		li {
+			padding: 15px 25px;
+			border: 1px solid $carparts_red;
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+		strong,span {
+			color: #ffffff;
+		}
+		strong {
+			font-size: 36px;
+		}
+		span {
+			font-size: 15px;
+			font-weight: 400;
+		}
+	}
+}
+/* motorcycle deals - end */
+
+
+/* home motorcycle - start */
+.motorcycle_tabs_nav {
+	li {
+		position: relative;
+		&:after,
+		&:before {
+			top: 50%;
+			content: '';
+			line-height: 1;
+			position: absolute;
+			transform: translateY(-50%);
+		}
+		&:before {
+			z-index: 1;
+			width: 18px;
+			height: 1px;
+			right: -9px;
+			background-color: $carparts_red;
+		}
+		&:after {
+			right: -5px;
+			z-index: -1;
+			width: 10px;
+			height: 10px;
+			border-radius: 100%;
+			background-color: #d3d3d3;
+		}
+		&:last-child {
+			&:after,
+			&:before {
+				display: none;
+			}
+		}
+		&:not(:last-child) {
+			margin-right: 25px;
+			padding-right: 25px;
+		}
+	}
+	a {
+		display: block;
+		color: #c1c1c1;
+		font-size: 25px;
+		font-weight: 700;
+		&:hover,
+		&.active {
+			color: #202020;
+		}
+	}
+}
+
+.motorcycle_product_grid {
+	margin-top: 30px;
+	position: relative;
+	.product_label {
+		top: 25px;
+		z-index: 1;
+		right: 25px;
+		position: absolute;
+	}
+	.item_image {
+		display: flex;
+		min-height: 460px;
+		align-items: center;
+		justify-content: center;
+		background-color: #f7f7f7;
+	}
+	img {
+		max-height: 370px;
+		transition: $default_transition;
+	}
+	&:hover {
+		img {
+			opacity: .22;
+		}
+	}
+
+	.product_action_btns {
+		top: 50%;
+		left: 0px;
+		right: 0px;
+		position: absolute;
+		transform: translateY(-50%);
+		li {
+			opacity: 0;
+			display: flex;
+			visibility: hidden;
+			justify-content: center;
+			transform: translateY(50px);
+			&:not(:last-child) {
+				margin-right: 0px;
+				margin-bottom: 2px;
+			}
+		}
+		a {
+			width: auto;
+			height: auto;
+			color: #ffffff;
+			font-size: 15px;
+			font-weight: 700;
+			border-radius: 0px;
+			display: inline-block;
+			background-color: transparent;
+			&:hover {
+				transform: unset;
+				span {
+					&:nth-child(2) {
+						background-color: $carparts_red;
+					}
+				}
+			}
+		}
+		span {
+			float: left;
+			height: 45px;
+			line-height: 45px;
+			display: inline-block;
+			transition: $default_transition;
+			&:first-child {
+				width: 45px;
+				text-align: center;
+				background-color: $carparts_red;
+			}
+			&:last-child {
+				min-width: 115px;
+				padding: 0px 15px;
+				background-color: #323232;
+			}
+		}
+	}
+	&:hover {
+		.product_action_btns {
+			li {
+				opacity: 1;
+				visibility: visible;
+				transform: translateY(0px);
+				transition: $default_transition;
+				&:nth-child(1) {
+					transition-delay: .1s;
+				}
+				&:nth-child(2) {
+					transition-delay: .2s;
+				}
+				&:nth-child(3) {
+					transition-delay: .3s;
+				}
+			}
+		}
+	}
+
+	.item_content {
+		padding-top: 35px;
+		position: relative;
+	}
+
+	.item_price {
+		z-index: 1;
+		top: -17px;
+		left: 30px;
+		height: 35px;
+		color: #ffffff;
+		font-size: 19px;
+		font-weight: 600;
+		line-height: 37px;
+		padding: 0px 16px;
+		position: absolute;
+		text-align: center;
+		background-color: #202020;
+	}
+
+	.item_title {
+		line-height: .9;
+		margin-bottom: 5px;
+		a {
+			color: #202020;
+			font-size: 45px;
+		}
+	}
+	&:hover {
+		.item_title {
+			a {
+				color: $carparts_red;
+			}
+		}
+	}
+
+	.item_type {
+		line-height: 1;
+		display: block;
+		font-size: 14px;
+		font-weight: 600;
+		color: $carparts_red;
+	}
+
+	.rating_star {
+		top: 15px;
+		right: 0px;
+		position: absolute;
+		li {
+			color: $carparts_red;
+		}
+	}
+}
+
+.motorcycle_image_1 {
+	top: 0px;
+	left: -43%;
+}
+
+.motorcycle_product_list {
+	display: flex;
+	margin-top: 30px;
+	align-items: center;
+	border: 2px solid #f6f6f6;
+	.item_image {
+		height: 450px;
+		min-width: 450px;
+		position: relative;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+		img {
+			max-width: auto;
+			max-height: 270px;
+		}
+	}
+	.product_label {
+		top: 20px;
+		right: 20px;
+		z-index: 1;
+		position: absolute;
+	}
+	.wishlist_btn {
+		z-index: 1;
+		right: 20px;
+		bottom: 20px;
+		line-height: 1;
+		width: 35px;
+		height: 35px;
+		display: flex;
+		font-size: 15px;
+		position: absolute;
+		align-items: center;
+		justify-content: center;
+		color: #202020;
+		background-color: #eaeaeb;
+		&:hover {
+			color: $carparts_red;
+		}
+	}
+	.item_content {
+		padding: 20px 40px;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 500;
+	}
+	.item_price {
+		line-height: 1;
+		font-size: 18px;
+		font-weight: 600;
+		padding: 8px 16px;
+		text-align: center;
+		display: inline-block;
+	}
+	.item_title {
+		a {
+			display: table;
+			color: #202020;
+			line-height: .8;
+			font-size: 45px;
+		}
+	}
+	&:hover {
+		.item_title {
+			a {
+				color: $carparts_red;
+			}
+		}
+	}
+	.item_type {
+		display: block;
+		line-height: 1;
+		font-size: 14px;
+		font-weight: 600;
+	}
+	.product_action_btns {
+		li {
+			display: flex;
+			justify-content: center;
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+		a {
+			width: auto;
+			height: auto;
+			color: #ffffff;
+			font-size: 15px;
+			font-weight: 700;
+			border-radius: 0px;
+			display: inline-block;
+			background-color: transparent;
+			&:hover {
+				transform: unset;
+				span {
+					&:nth-child(2) {
+						background-color: $carparts_red;
+					}
+				}
+			}
+		}
+		span {
+			float: left;
+			height: 45px;
+			line-height: 45px;
+			display: inline-block;
+			transition: $default_transition;
+			&:first-child {
+				width: 45px;
+				text-align: center;
+				background-color: $carparts_red;
+			}
+			&:last-child {
+				min-width: 115px;
+				padding: 0px 15px;
+				background-color: #323232;
+			}
+		}
+	}
+}
+/* home motorcycle - end */
+
+
+/* motorcycle feature - start */
+.motorcycle_big_feature {
+	.overlay {
+		opacity: .95;
+		background-color: #f7f7f7;
+	}
+
+	.tabs_menu {
+		li {
+			width: 170px;
+			height: 170px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #ffffff;
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+		img {
+			max-height: 150px;
+		}
+	}
+
+	.item_title {
+		line-height: 1;
+		font-size: 76px;
+	}
+
+	.info_list {
+		li {
+			font-size: 20px;
+			font-weight: 700;
+		}
+		i {
+			margin-right: 10px;
+			color: $carparts_red;
+		}
+	}
+}
+
+.feature_fullimage {
+	overflow: hidden;
+	position: relative;
+	&:before {
+		top: 0px;
+		left: 50%;
+		width: 0%;
+		z-index: 1;
+		bottom: 0px;
+		content: '';
+		opacity: .8;
+		position: absolute;
+		background-color: #ed1d24;
+		transform: translateX(-50%);
+		transition: $default_transition;
+	}
+	&:hover {
+		&:before {
+			width: 100%;
+		}
+	}
+	img {
+		width: 100%;
+		display: block;
+		transition: $default_transition;
+	}
+	&:hover {
+		img {
+			transform: scale(1.05);
+		}
+	}
+
+	.item_content {
+		top: 50%;
+		left: 0px;
+		right: 0px;
+		z-index: 2;
+		position: absolute;
+	}
+	.item_title {
+		line-height: 1;
+		font-size: 40px;
+	}
+
+	.item_title,
+	.custom_btn {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	&:hover {
+		.item_title,
+		.custom_btn {
+			opacity: 1;
+			transform: translateY(0px);
+			transition: $default_transition;
+		}
+
+		.item_title {
+			transition-delay: .1s;
+		}
+		.custom_btn {
+			transition-delay: .2s;
+		}
+	}
+}
+/* motorcycle feature - end */
+
+
+/* motorcycle testimonial - start */
+.motorcycle_testimonial {
+	z-index: 1;
+	position: relative;
+	padding-top: 220px;
+	padding-bottom: 120px;
+	.half_bg {
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		z-index: -1;
+		min-height: 700px;
+		position: absolute;
+		&:before {
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			content: '';
+			opacity: .7;
+			position: absolute;
+			background-color: #242424;
+		}
+	}
+
+	.carousel_nav {
+		top: 50%;
+		right: 80px;
+		position: absolute;
+	}
+}
+
+.motorcycle_testimonial_item {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	.item_image {
+		width: 55%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #1f1f1f;
+		img {
+			max-height: 480px;
+		}
+	}
+	.item_content {
+		width: 45%;
+		position: relative;
+		padding: 70px 80px;
+		border: 3px solid #eeeeee;
+		&:before {
+			top: 164px;
+			z-index: 2;
+			left: -75px;
+			content: '';
+			height: 1px;
+			width: 109px;
+			position: absolute;
+			background-color: $carparts_red;
+			box-shadow: 0px 2px 7px 0px rgba(237, 29, 36, 0.51);
+		}
+	}
+
+	.sub_title {
+		line-height: 1;
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.title_text {
+		line-height: .8;
+		font-size: 80px;
+		margin-bottom: 25px;
+		span {
+			display: block;
+			color: $carparts_red;
+		}
+	}
+	.quote_icon {
+		line-height: 1;
+		display: block;
+		font-size: 32px;
+		margin-bottom: 5px;
+	}
+	.admin_image {
+		padding-left: 30px;
+		li {
+			width: 70px;
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+	}
+	.admin_name {
+		line-height: 1;
+		font-size: 24px;
+		margin-bottom: 15px;
+		color: $carparts_red;
+	}
+	p {
+		color: #262626;
+		font-size: 18px;
+		font-style: italic;
+		font-family: 'Roboto', sans-serif;
+	}
+}
+/* motorcycle testimonial - end */
+
+
+/* motorcycle instagram - start */
+.motorcycle_instagram_image {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	background-color: #000000;
+	img {
+		width: 100%;
+		display: block;
+		transition: $default_transition;
+	}
+	&:hover {
+		img {
+			opacity: .3;
+			transform: scale(1.07);
+		}
+	}
+	&:before {}
+}
+/* motorcycle instagram - end */
+
+/* home motorcycle - end
+==================================================================================================== */

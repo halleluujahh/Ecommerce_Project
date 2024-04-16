@@ -1,0 +1,468 @@
+/* buttons style - start
+==================================================================================================== */
+
+/* custom btn - start */
+.custom_btn {
+	z-index: 1;
+	height: 60px;
+	line-height: 1;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 10px 35px;
+	position: relative;
+	align-items: center;
+	display: inline-flex;
+	letter-spacing: .5px;
+	justify-content: center;
+	&:before {
+		top: 0px;
+		width: 0px;
+		left: auto;
+		right: 0px;
+		z-index: -1;
+		bottom: 0px;
+		content: '';
+		position: absolute;
+		transition: all 0.3s ease-in-out;
+	}
+	&:hover {
+		color: #ffffff;
+		&:before {
+			left: 0px;
+			width: 100%;
+			right: auto;
+		}
+	}
+
+	&.btn_sm {
+		height: 50px;
+		padding: 10px 30px;
+	}
+
+	&.btn_round {
+		overflow: hidden;
+		border-radius: 45px;
+	}
+
+	&.bg_white {
+		color: #000000;
+		&:before {
+			background: #000000;
+		}
+		&:hover {
+			color: #ffffff;
+		}
+	}
+
+	&.bg_black {
+		color: #ffffff;
+		&:before {
+			background: #ebebeb;
+		}
+		&:hover {
+			color: #000000;
+		}
+	}
+
+	&.bg_gray {
+		color: #000000;
+		background-color: #ebebeb;
+		&:before {
+			background: #000000;
+		}
+		&:hover {
+			color: #ffffff;
+		}
+	}
+
+	&.bg_danger {
+		box-shadow: 0px 10px 30px 0px rgba(218, 10, 44, 0.5);
+		&:before {
+			background: $default_black;
+		}
+	}
+	&.bg_secondary {
+		box-shadow: 0px 10px 30px 0px rgba(135, 153, 163, 0.5);
+		&:before {
+			background: $default_black;
+		}
+	}
+	&.bg_success {
+		box-shadow: 0px 10px 30px 0px rgba(57, 181, 74, 0.5);
+		&:before {
+			background: $default_black;
+		}
+	}
+
+	&.bg_default_black {
+		&:before {
+			background: $default_red;
+		}
+	}
+
+	&.bg_default_red {
+		&:before {
+			background: $default_black;
+		}
+	}
+
+	&.bg_carparts_red {
+		background-color: #e52929;
+		&:before {
+			background: $default_black;
+		}
+	}
+
+	&.bg_furniture_brown {
+		&:before {
+			background: #90512d;
+		}
+	}
+
+	&.bg_modern_red {
+		&:before {
+			background: #297fe1;
+		}
+	}
+
+	&.bg_medical_blue {
+		&:before {
+			background: #297fe1;
+		}
+	}
+
+	&.bg_fashion_red {
+		&:before {
+			background: #35557b;
+		}
+	}
+
+	&.bg_fashion2_red {
+		&:before {
+			background: #181818;
+		}
+	}
+
+	&.bg_lookbook_red {
+		&:before {
+			background: #ca0000;
+		}
+	}
+
+	&.bg_electronic_blue {
+		&:before {
+			background: #003d82;
+		}
+	}
+
+	&.bg_supermarket_red {
+		&:before {
+			background: #003d82;
+		}
+	}
+
+	&.bg_onelook_red {
+		&:before {
+			background: $onelook_orange;
+		}
+	}
+
+	&.bg_motorcycle_red {
+		&:before {
+			background: $carparts_red;
+		}
+	}
+
+	&.bg_shop_brown {
+		&:before {
+			background: #181818;
+		}
+	}
+
+	&.bg_shop_red {
+		&:before {
+			background: #e52929;
+		}
+	}
+
+	&.bg_gadget_red {
+		&:before {
+			background: #da3434;
+		}
+	}
+
+	&.bg_story_green {
+		&:before {
+			background: #0d0d0d;
+		}
+	}
+	&.bg_story_black {
+		&:before {
+			background: #39b54a;
+		}
+	}
+	&.bg_sports_red {
+		&:before {
+			background: #000000;
+		}
+	}
+	&.bg_watch_red {
+		&:before {
+			background: #191919;
+		}
+	}
+}
+
+.custom_btn {
+	&.btn_border {
+		border: 2px solid transparent;
+	}
+	&.border_gray {
+		color: #000000;
+		border-color: #e4e4e4;
+		&:before {
+			background: #e4e4e4;
+		}
+	}
+	&.border_electronic {
+		color: $electronic_blue;
+		border-color: $electronic_blue;
+		&:before {
+			background: $electronic_blue;
+		}
+		&:hover {
+			color: #ffffff;
+		}
+	}
+}
+/* custom btn - end */
+
+
+/* child btn - start */
+.child_btn {
+	z-index: 1;
+	height: 50px;
+	color: #202020;
+	font-size: 15px;
+	font-weight: 600;
+	min-width: 150px;
+	line-height: 50px;
+	padding: 0px 20px;
+	text-align: center;
+	position: relative;
+	&:before {
+		top: 0px;
+		width: 0px;
+		left: auto;
+		right: 0px;
+		z-index: -1;
+		bottom: 0px;
+		content: '';
+		position: absolute;
+		transition: all 0.3s ease-in-out;
+	}
+	&:hover {
+		&:before {
+			left: 0px;
+			width: 100%;
+			right: auto;
+		}
+	}
+
+	&.btn_border {
+		line-height: 46px;
+		border: 3px solid transparent;
+	}
+
+	&.border_gray {
+		border-color: #efefef;
+		&:before {
+			background: #efefef;
+		}
+	}
+}
+/* child btn - end */
+
+
+/* icon btn - start */
+.icon_btn {
+	z-index: 1;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	color: #ffffff;
+	font-size: 16px;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	align-items: center;
+	border-radius: 100%;
+	justify-content: center;
+	&:before {
+		top: 0px;
+		width: 0px;
+		left: auto;
+		right: 0px;
+		z-index: -1;
+		bottom: 0px;
+		content: '';
+		position: absolute;
+		transition: all 0.3s ease-in-out;
+	}
+	&:hover {
+		color: #ffffff;
+		&:before {
+			left: 0px;
+			width: 100%;
+			right: auto;
+		}
+	}
+
+	&.btn_sm {
+		width: 40px;
+		height: 40px;
+		line-height: 44px;
+	}
+
+	&.bg_carparts_red {
+		background-color: #e52929;
+		&:before {
+			background: $default_black;
+		}
+	}
+	&.bg_fashion_red {
+		&:before {
+			background: #35567c;
+		}
+	}
+}
+/* icon btn - end */
+
+
+/* text btn - start */
+.text_btn {
+	color: #000000;
+	align-items: center;
+	display: inline-flex;
+	span {
+		line-height: 1;
+		font-size: 15px;
+		font-weight: 600;
+		position: relative;
+		padding-bottom: 2px;
+		transition: $default_transition;
+		&:before {
+			width: 0px;
+			left: auto;
+			right: 0px;
+			bottom: 0px;
+			height: 1px;
+			content: '';
+			position: absolute;
+			transition: width 0.2s linear;
+			background-color: $default_red;
+		}
+	}
+	&:hover {
+		color: $default_red;
+		span {
+			&:before {
+				left: 0px;
+				width: 100%;
+				right: auto;
+			}
+		}
+	}
+	i {
+		line-height: 1;
+		margin-left: 5px;
+		display: inline-block;
+		transition: $default_transition;
+	}
+	&:hover {
+		i {
+			transform: translateX(5px);
+		}
+	}
+}
+
+.text-white {
+	.text_btn {
+		color: #ffffff;
+		span {
+			&:before {
+				background-color: #ffffff;
+			}
+		}
+	}
+}
+/* text btn - end */
+
+
+/* video play btns - start */
+.play_btn {
+	width: 120px;
+	height: 120px;
+	color: #000000;
+	font-size: 26px;
+	line-height: 122px;
+	text-align: center;
+	border-radius: 100%;
+	background-color: #ffffff;
+}
+
+.play_btn_1 {
+	width: 145px;
+	height: 145px;
+	align-items: center;
+	border-radius: 100%;
+	display: inline-flex;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.37);
+	&.pxy_center {
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%, -50%);
+	}
+	span {
+		width: 105px;
+		height: 105px;
+		color: #ffffff;
+		font-size: 20px;
+		line-height: 105px;
+		text-align: center;
+		border-radius: 100%;
+		background-color: #262323;
+	}
+}
+
+.play_btn_2 {
+	line-height: 1;
+	align-items: center;
+	display: inline-flex;
+	span {
+		width: 60px;
+		height: 60px;
+		color: #ffffff;
+		line-height: 60px;
+		margin-right: 15px;
+		text-align: center;
+		border-radius: 100%;
+		background-color: #000000;
+		i {
+			margin-left: 5px;
+		}
+	}
+	small {
+		color: #202020;
+		line-height: 1;
+		font-size: 18px;
+		font-weight: 600;
+	}
+}
+/* video play btns - end */
+
+/* buttons style - end
+==================================================================================================== */

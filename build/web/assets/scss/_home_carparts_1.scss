@@ -1,0 +1,1053 @@
+/* home carparts - start
+================================================== */
+
+/* carparts reset - start */
+.home_carparts {
+	color: #1e1e1e;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Rajdhani';
+	p {
+		font-family: 'Lato';
+	}
+	h1,h2,h3,h4,h5,h6 {
+		font-family: 'Rajdhani';
+	}
+
+	::selection {
+		color: #ffffff;
+		background-color: $carparts_red;
+	}
+
+	::-moz-selection {
+		color: #ffffff;
+		background-color: $carparts_red;
+	}
+
+	:-moz-placeholder {
+		color: #4a4949;
+		font-weight: 500;
+		font-family: 'Rubik', sans-serif;
+	}
+	::-moz-placeholder {
+		color: #4a4949;
+		font-weight: 500;
+		font-family: 'Rubik', sans-serif;
+	}
+	:-ms-input-placeholder {
+		color: #4a4949;
+		font-weight: 500;
+		font-family: 'Rubik', sans-serif;
+	}
+	::-webkit-input-placeholder {
+		color: #4a4949;
+		font-weight: 500;
+		font-family: 'Rubik', sans-serif;
+	}
+
+	.option_select {
+		font-weight: 500;
+		font-family: 'Rubik', sans-serif;
+	}
+
+	.custom_btn {
+		font-size: 20px;
+		font-family: 'Rajdhani';
+		&.btn_sm {
+			font-size: 18px;
+		}
+	}
+
+	.submit_btn {
+		font-family: 'Rubik', sans-serif;
+	}
+
+	.rating_star {
+		>li {
+			color: $carparts_red;
+		}
+	}
+
+	.slick-arrow {
+		border-radius: 100%;
+	}
+	.carousel_nav {
+		button {
+			color: #ffffff;
+			border-radius: 100%;
+			background-color: #313131;
+			&:hover {
+				color: #ffffff;
+				background-color: $carparts_red;
+			}
+		}
+	}
+}
+
+.carparts_block_tabs {
+	top: 30px;
+	left: -250px;
+	width: 250px;
+	text-align: right;
+	position: absolute;
+	padding-right: 30px;
+	li {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+	a {
+		height: 50px;
+		line-height: 52px;
+		font-size: 22px;
+		font-weight: 700;
+		padding: 0px 25px;
+		padding-left: 40px;
+		color: $default_black;
+		text-transform: uppercase;
+		background-color: #f5f5f5;
+		&:hover,
+		&.active {
+			color: $carparts_red;
+		}
+	}
+}
+
+.carparts_inline_tabs {
+	li {
+		&:not(:last-child) {
+			margin-right: 45px;
+		}
+	}
+	a {
+		z-index: 1;
+		line-height: 1;
+		display: block;
+		font-size: 18px;
+		font-weight: 700;
+		position: relative;
+		padding-bottom: 2px;
+		color: $default_black;
+		text-transform: uppercase;
+		&:before {
+			width: 0px;
+			left: auto;
+			right: 0px;
+			z-index: -1;
+			bottom: 0px;
+			height: 2px;
+			content: '';
+			position: absolute;
+			background: $carparts_red;
+			transition: width 0.3s linear;
+		}
+		&:hover,
+		&.active {
+			color: $carparts_red;
+			&:before {
+				left: 0px;
+				width: 100%;
+				right: auto;
+			}
+		}
+	}
+}
+
+.carparts_filetr_bar {
+	.result_text {
+		margin: 0px;
+		color: #a8aaab;
+		font-size: 17px;
+	}
+
+	.option_select {
+		justify-content: flex-end;
+	}
+	.option_title {
+		color: #000000;
+		font-size: 17px;
+		font-weight: 700;
+		margin-right: 15px;
+		display: inline-block;
+	}
+	.nice-select {
+		height: auto;
+		padding: 0px;
+		color: #7b7d7f;
+		line-height: 1;
+		font-size: 17px;
+		max-width: 130px;
+		font-weight: 700;
+		display: inline-block;
+		.list {
+			left: unset;
+			right: 0px;
+		}
+	}
+}
+
+.carparts_layout_btns {
+	li {
+		&:not(:first-child) {
+			margin-left: -1px;
+		}
+	}
+	a {
+		width: 45px;
+		height: 45px;
+		color: #a8aaab;
+		font-size: 14px;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+		border: 1px solid #eaeaeb;
+		&:hover,
+		&.active {
+			color: #ffffff;
+			border-color: $carparts_red;
+			background-color: $carparts_red;
+		}
+	}
+}
+
+.carparts_pagination_nav {
+	a {
+		height: 40px;
+		padding: 10px;
+		color: #1c1f23;
+		min-width: 40px;
+		font-size: 18px;
+		font-weight: 700;
+		text-align: center;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+	}
+	li {
+		&:not(:last-child) {
+			margin-right: 5px;
+		}
+		&:hover,
+		&.active {
+			>a {
+				color: $carparts_red;
+				background-color: #f0eeee;
+			}
+		}
+	}
+}
+/* carparts reset - end */
+
+
+/* banner section - start */
+.carparts_banner {
+	z-index: 1;
+	min-height: 1016px;
+	position: relative;
+	&:before {
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		content: '';
+		z-index: -1;
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	&:after {
+		width: 65%;
+		right: 0px;
+		bottom: 0px;
+		content: '';
+		height: 110px;
+		position: absolute;
+		background-color: $carparts_red;
+		clip-path: polygon(100% 0, 60px 100%, 100% 100%);
+	}
+
+	p {
+		line-height: 1;
+		font-size: 22px;
+		font-weight: 700;
+		color: $carparts_red;
+		margin-bottom: 20px;
+		font-family: 'Rajdhani';
+	}
+	h1 {
+		font-size: 80px;
+		font-weight: 700;
+		line-height: 0.886;
+		margin-bottom: 40px;
+	}
+}
+
+.carparts_search {
+	>ul {
+		margin-left: -5px;
+		margin-right: -5px;
+		>li {
+			flex: 25%;
+			max-width: 25%;
+			padding: 0px 5px;
+			&:last-child {
+				flex: 15%;
+				max-width: 15%;
+			}
+		}
+	}
+
+	.option_select {
+		margin: 0px;
+		.nice-select {
+			height: 65px;
+			font-weight: 500;
+			padding: 0px 35px;
+			line-height: 65px;
+			border-radius: 4px;
+			font-family: 'Rubik', sans-serif;
+			span {
+				color: #4a4949;
+				font-size: 16px;
+				font-weight: 500;
+				font-family: 'Rubik', sans-serif;
+			}
+		}
+	}
+
+	.form_item {
+		margin: 0px;
+		input {
+			height: 65px;
+			padding: 0px 35px;
+			border-radius: 4px;
+		}
+	}
+
+	.submit_btn {
+		width: 100%;
+		height: 65px;
+		display: block;
+		color: #ffffff;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 65px;
+		text-align: center;
+		border-radius: 4px;
+		text-transform: uppercase;
+		font-family: 'Rubik', sans-serif;
+	}
+}
+/* banner section - start */
+
+
+/* carparts policy - start */
+.carparts_policy {
+	padding: 57px 0px;
+}
+.carparts_policy_item {
+	display: flex;
+	max-width: 270px;
+	align-items: center;
+	margin: 50px auto 0px;
+	.item_icon {
+		float: left;
+		margin-right: 30px;
+	}
+	.item_title {
+		line-height: 1;
+		color: #121212;
+		font-size: 21px;
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+	p {
+		line-height: 1;
+		color: #121212;
+		font-size: 15px;
+		font-weight: 600;
+		margin-bottom: 0px;
+		font-family: 'Rajdhani', sans-serif;
+	}
+}
+/* carparts policy - end */
+
+
+/* carparts category - start */
+.primary_carparts_category {
+	max-width: 270px;
+	padding-top: 26px;
+	text-align: center;
+	position: relative;
+	margin: 50px auto 0px;
+
+	.item_offer {
+		top: 0px;
+		left: 26px;
+		z-index: 2;
+		width: 56px;
+		height: 56px;
+		color: #ffffff;
+		position: absolute;
+		padding: 12.5px 0px;
+		border-radius: 100%;
+		span {
+			display: block;
+			line-height: .9;
+			font-size: 18px;
+			font-weight: 700;
+		}
+	}
+
+	.item_image {
+		width: 218px;
+		height: 218px;
+		overflow: hidden;
+		position: relative;
+		border-radius: 100%;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+		background-color: #f8f8f8;
+		&:before {
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			opacity: 0;
+			content: '';
+			position: absolute;
+			transition: $default_transition;
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+		.icon_btn {
+			top: 50%;
+			left: 25%;
+			z-index: 2;
+			opacity: 0;
+			width: 55px;
+			height: 55px;
+			font-size: 20px;
+			line-height: 59px;
+			position: absolute;
+			transform: translate(-25%, -50%);
+			transition: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+		}
+		>img {
+			margin: auto;
+			max-width: 165px;
+		}
+	}
+	&:hover {
+		.item_image {
+			&:before {
+				opacity: 1;
+			}
+			.icon_btn {
+				left: 50%;
+				opacity: 1;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+
+	.item_content {
+		padding-top: 40px;
+		position: relative;
+		&:before {
+			left: 50%;
+			top: -20px;
+			width: 2px;
+			z-index: 3;
+			content: '';
+			height: 40px;
+			position: absolute;
+			transform: translateX(-50%);
+			background-color: $carparts_red;
+		}
+	}
+
+	.item_title {
+		line-height: 1;
+		color: #121212;
+		font-size: 30px;
+		font-weight: 700;
+		margin-bottom: 5px;
+	}
+
+	.item_instock {
+		font-size: 16px;
+		font-weight: 600;
+		color: $carparts_red;
+	}
+}
+
+.carparts_category_carousel {
+	.item {
+		padding: 0px 10px;
+	}
+	.primary_carparts_category {
+		margin: 0px auto;
+	}
+}
+/* carparts category - end */
+
+
+/* deals section - start */
+.carparts_store_info {
+	z-index: 1;
+	position: relative;
+	padding: 60px 35px;
+	margin: 30px auto 0px;
+	&:before {
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		content: '';
+		z-index: -1;
+		opacity: 0.8;
+		position: absolute;
+		background-color: rgb(26, 26, 26);
+	}
+
+	.item_title {
+		line-height: 1;
+		font-size: 28px;
+		letter-spacing: -1px;
+		color: $carparts_red;
+	}
+
+	ul {
+		margin-bottom: 25px;
+		a {
+			color: #ffffff;
+			line-height: 1;
+			font-size: 20px;
+			font-weight: 700;
+			&:hover {
+				color: $carparts_red;
+			}
+		}
+	}
+}
+
+.carparts_deals_listlayout {
+	padding: 60px;
+	margin: 30px auto 0px;
+	background-color: #ffffff;
+	.deals_image {
+		float: left;
+		width: 370px;
+		margin-left: -60px;
+	}
+	.deals_content {
+		display: table;
+	}
+	.discount_text {
+		line-height: 1;
+		color: #161616;
+		display: block;
+		font-size: 22px;
+		font-weight: 700;
+		margin-bottom: 10px;
+		letter-spacing: 10px;
+	}
+	.item_title {
+		color: #151515;
+		font-size: 50px;
+		line-height: .88;
+		margin-bottom: 17px;
+	}
+	p {
+		font-size: 16px;
+	}
+	.countdown_timer {
+		margin-bottom: 20px;
+	}
+	.price_text {
+		line-height: 1;
+		display: block;
+		color: #151515;
+		font-size: 32px;
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+}
+
+.carparts_deals_carousel {
+	margin-top: 30px;
+	.carparts_deals_listlayout {
+		margin: 0px auto;
+		padding-top: 95px;
+	}
+
+	.carousel_nav {
+		top: 30px;
+		z-index: 1;
+		right: 30px;
+		position: absolute;
+	}
+}
+/* deals section - end */
+
+
+/* car parts product - start */
+.carparts_product_grid {
+	max-width: 370px;
+	position: relative;
+	margin: 30px auto 0px;
+	.product_label {
+		top: 12px;
+		right: 12px;
+		z-index: 2;
+		position: absolute;
+	}
+
+	.item_image {
+		height: 276px;
+		display: flex;
+		overflow: hidden;
+		position: relative;
+		align-items: center;
+		justify-content: center;
+		>img {
+			transition: $default_transition;
+		}
+	}
+	&:hover {
+		.item_image {
+			>img {
+				opacity: .2;
+			}
+		}
+	}
+
+	.product_action_btns {
+		top: 50%;
+		left: 0px;
+		right: 0px;
+		z-index: 1;
+		position: absolute;
+		transform: translateY(-50%);
+		li {
+			opacity: 0;
+			transform: translateY(40px);
+		}
+		a {
+			&:hover {
+				background-color: $carparts_red;
+			}
+		}
+	}
+	&:hover {
+		.product_action_btns {
+			li {
+				opacity: 1;
+				transform: translateY(0px);
+				transition: 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+				&:nth-child(1) {
+					transition-delay: .1s;
+				}
+				&:nth-child(2) {
+					transition-delay: .2s;
+				}
+				&:nth-child(3) {
+					transition-delay: .3s;
+				}
+			}
+		}
+	}
+
+	.item_content {
+		padding: 20px 30px;
+	}
+
+	.item_title {
+		margin-top: 2px;
+		margin-bottom: 5px;
+		>a {
+			color: #414141;
+			font-size: 23px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+	&:hover {
+		.item_title {
+			>a {
+				color: $carparts_red;
+			}
+		}
+	}
+
+	.price_text {
+		line-height: 1;
+		display: block;
+		color: #414141;
+		font-size: 18px;
+		strong {
+			font-weight: 700;
+			margin-right: 5px;
+		}
+		del {
+			font-weight: 500;
+		}
+	}
+}
+
+.carparts_product_grid {
+	&.column_3 {
+		.item_image {
+			height: 355px;
+		}
+
+		.product_label {
+			top: 15px;
+			right: 15px;
+		}
+
+		.item_content {
+			padding: 30px 25px;
+		}
+	}
+}
+
+.carparts_product_listlayout {
+	display: flex;
+	margin-top: 30px;
+	align-items: center;
+	.item_image {
+		height: 370px;
+		display: flex;
+		min-width: 270px;
+		position: relative;
+		align-items: center;
+		justify-content: center;
+	}
+	.product_label {
+		top: 15px;
+		right: 15px;
+		position: absolute;
+	}
+	.item_content {
+		max-width: 600px;
+		padding: 30px 50px;
+	}
+
+	.item_title {
+		margin-top: 10px;
+		margin-bottom: 20px;
+		a {
+			color: #414141;
+			font-size: 23px;
+			font-weight: 700;
+		}
+	}
+	&:hover {
+		.item_title {
+			a {
+				color: $carparts_red;
+			}
+		}
+	}
+
+	p {
+		color: #7b7d7f;
+		font-size: 20px;
+		font-weight: 700;
+		font-family: 'Rajdhani', sans-serif;
+	}
+
+	.action_btns_wrap {
+		display: flex;
+		margin-top: 30px;
+		padding-top: 30px;
+		align-items: center;
+		border-top: 2px solid #e5e5e5;
+		justify-content: space-between;
+	}
+
+	.price_text {
+		font-size: 22px;
+	}
+
+	.product_action_btns {
+		a {
+			color: #ffffff;
+			box-shadow: none;
+			background-color: $carparts_red;
+			&:hover {
+				transform: unset;
+				background-color: $carparts_black;
+			}
+		}
+	}
+}
+/* car parts product - end */
+
+
+/* Interior carparts - start */
+.Interior_carparts {
+	overflow: hidden;
+	margin-top: 30px;
+	position: relative;
+	&:before {
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		content: '';
+		z-index: 1;
+		position: absolute;
+		background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2));
+	}
+	img {
+		width: 100%;
+		display: block;
+		transition: $default_transition;
+	}
+	&:hover {
+		img {
+			transform: scale(1.07);
+		}
+	}
+
+	.item_content {
+		top: 50%;
+		left: 0px;
+		z-index: 2;
+		padding: 30px 40px;
+		position: absolute;
+		transform: translateY(-50%);
+	}
+
+	.sub_title {
+		display: block;
+		line-height: 1;
+		font-size: 17px;
+		font-weight: 600;
+		color: $carparts_red;
+		margin-bottom: 7px;
+	}
+	.item_title {
+		line-height: .8;
+		font-size: 38px;
+		font-weight: 700;
+		margin-bottom: 25px;
+	}
+
+	.parts_category_list {
+		margin: 20px 0px;
+		li {
+			width: 100%;
+			display: table;
+			&:not(:last-child) {
+				margin-bottom: 8px;
+			}
+		}
+		a {
+			float: left;
+			line-height: 1;
+			color: #ffffff;
+			font-size: 20px;
+			font-weight: 700;
+			&:hover {
+				color: $carparts_red;
+			}
+		}
+	}
+}
+/* Interior carparts - end */
+
+
+/* deals section - start */
+.carparts_deals_grid {
+	margin-top: 30px;
+	position: relative;
+	padding-bottom: 70px;
+	background-color: #ffffff;
+	.discount_content {
+		padding: 17.5px 30px;
+	}
+	.discount_text {
+		line-height: 1;
+		font-size: 30px;
+		margin-bottom: 0px;
+		span {
+			float: right;
+			font-weight: 700;
+		}
+	}
+
+	.item_image {
+		display: flex;
+		overflow: hidden;
+		min-height: 370px;
+		position: relative;
+		align-items: center;
+		justify-content: center;
+		>img {
+			transition: $default_transition;
+		}
+	}
+	&:hover {
+		.item_image {
+			>img {
+				opacity: .2;
+			}
+		}
+	}
+	
+	.product_action_btns {
+		top: 50%;
+		left: 0px;
+		right: 0px;
+		z-index: 1;
+		position: absolute;
+		transform: translateY(-50%);
+		li {
+			opacity: 0;
+			transform: translateY(40px);
+		}
+	}
+	&:hover {
+		.product_action_btns {
+			li {
+				opacity: 1;
+				transform: translateY(0px);
+				transition: 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+				&:nth-child(1) {
+					transition-delay: .1s;
+				}
+				&:nth-child(2) {
+					transition-delay: .2s;
+				}
+				&:nth-child(3) {
+					transition-delay: .3s;
+				}
+			}
+		}
+	}
+
+	.item_content {
+		padding: 0px 30px;
+	}
+
+	.item_title {
+		margin-bottom: 2px;
+		>a {
+			font-size: 32px;
+			font-weight: 700;
+			color: $default_black;
+		}
+	}
+	&:hover {
+		.item_title {
+			>a {
+				color: $carparts_red;
+			}
+		}
+	}
+
+	.price_text {
+		display: block;
+		line-height: 1;
+		margin-bottom: 25px;
+		strong {
+			font-size: 24px;
+			font-weight: 700;
+			margin-right: 5px;
+			color: $carparts_red;
+		}
+		del {
+			font-size: 18px;
+			font-weight: 500;
+		}
+	}
+}
+
+.carparts_dealsgrid_carousel {
+	position: relative;
+	.slick-dots {
+		width: auto;
+		left: unset;
+		right: 30px;
+		bottom: 30px;
+		padding: 0px;
+		transform: unset;
+		position: absolute;
+	}
+}
+/* deals section - end */
+
+
+/* new products section - start */
+.new_carparts_images {
+	margin-top: 30px;
+	margin-left: -15px;
+	margin-right: -15px;
+	li {
+		flex: 0 0 50%;
+		max-width: 50%;
+		padding: 0px 15px;
+	}
+}
+
+.new_carparts_content {
+	padding-left: 20px;
+	.item_title {
+		font-size: 45px;
+		font-weight: 700;
+		line-height: 1.111;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 1.45;
+		margin-bottom: 25px;
+	}
+}
+/* new products section - end */
+
+
+/* carparts newsletter - start */
+.carparts_newsletter {
+	.newsletter_title {
+		line-height: 1;
+		color: #2e2e2e;
+		font-size: 50px;
+		margin-bottom: 0px;
+		position: relative;
+		padding-left: 115px;
+		i {
+			top: 5px;
+			left: 0px;
+			color: #333e48;
+			font-size: 86px;
+			position: absolute;
+		}
+	}
+
+	.form_item {
+		margin-bottom: 0px;
+		input {
+			height: 85px;
+			font-size: 20px;
+			padding: 0px 40px;
+		}
+		button {
+			top: 50%;
+			right: 0px;
+			height: 85px;
+			line-height: 87px;
+			position: absolute;
+			padding: 0px 50px;
+			transform: translateY(-50%);
+		}
+	}
+}
+/* carparts newsletter - end */
+
+/* home carparts - end
+================================================== */

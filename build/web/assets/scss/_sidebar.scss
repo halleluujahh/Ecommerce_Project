@@ -1,0 +1,529 @@
+/* sidebar - start
+==================================================================================================== */
+.sb_widget {
+	&:not(:last-child) {
+		margin-bottom: 50px;
+	}
+}
+
+.sb_widget_title {
+	line-height: 1;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.sb_instagram {
+	ul {
+		margin: -4px;
+	}
+	li {
+		width: 50%;
+		padding: 4px;
+	}
+	img {
+		width: 100%;
+		display: block;
+		transition: $default_transition;
+	}
+	i {
+		top: 50%;
+		left: 50%;
+		z-index: 2;
+		opacity: 0;
+		color: #ffffff;
+		font-size: 30px;
+		position: absolute;
+		transition: $default_transition;
+		transform: translate(-50%, -50%);
+	}
+	a {
+		display: block;
+		overflow: hidden;
+		position: relative;
+		background-color: #000000;
+		&:hover {
+			img {
+				opacity: .4;
+			}
+			i {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.sb_category {
+	a {
+		color: #333333;
+		display: block;
+		line-height: 1;
+		&:hover {
+			color: $default_red;
+		}
+		span {
+			float: right;
+		}
+	}
+
+	li {
+		&:not(:last-child) {
+			margin-bottom: 15px;
+			border-bottom: 1px solid #e8e8e8;
+			a {
+				padding-bottom: 15px;
+			}
+		}
+	}
+}
+
+.sb_tags {
+	ul {
+		margin: -5px;
+	}
+	li {
+		padding: 5px;
+	}
+	a {
+		display: block;
+		line-height: 1;
+		color: #333333;
+		font-size: 15px;
+		padding: 9px 15px;
+		border-radius: 3px;
+		border: 1px solid #e6e6e6;
+		&:hover {
+			color: #ffffff;
+			border-color: $default_red;
+			background-color: $default_red;
+		}
+	}
+}
+
+.price-range-area {
+	padding-top: 7px;
+	.slider-range {
+		height: 6px;
+		border: none;
+		border-radius: 45px;
+		background-color: #e7e7ee;
+	}
+	.ui-slider-range {
+		border: none;
+		border-radius: 45px;
+		background-color: $default_red;
+	}
+	.ui-state-default {
+		top: -7px;
+		width: 20px;
+		height: 20px;
+		border: none;
+		outline: none;
+		border-radius: 100%;
+		border: 6px solid #ffffff;
+		background-color: $default_red;
+		box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+	}
+	.price-text {
+		font-size: 17px;
+		font-weight: 600;
+		margin-top: 20px;
+		color: $default_color;
+		span {
+			float: left;
+			margin-right: 15px;
+		}
+		input {
+			border: none;
+			font-weight: 600;
+			color: $default_black;
+			display: inline-block;
+			background-color: transparent;
+		}
+	}
+
+	.price_filter_btn {
+		height: 40px;
+		color: #ffffff;
+		font-weight: 600;
+		padding: 10px 20px;
+		border-radius: 4px;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+		box-shadow: 0px 10px 30px 0px rgba(135, 153, 163, 0.5);
+	}
+}
+
+.sb_category_accordion {
+	.card {
+		border: none;
+		border-radius: 0px;
+		background-color: transparent;
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+	.card-header {
+		padding: 0px;
+		border: none;
+		background-color: transparent;
+	}
+
+	a {
+		color: #7b7d7f;
+		font-size: 17px;
+		font-weight: 700;
+		padding-left: 20px;
+		position: relative;
+		&:before {
+			top: 0px;
+			left: 0px;
+			content: '';
+			color: #cccecf;
+			position: absolute;
+			transition: $default_transition;
+		}
+		&:hover {
+			color: #1c1f23;
+		}
+	}
+
+	.card-header {
+		a {
+			&:before {
+				font-size: 400;
+				content: '\f105';
+				font-family: 'Font Awesome 5 Pro';
+			}
+			&:not(.collapsed) {
+				color: #1c1f23;
+				&:before {
+					content: '\f107';
+					color: $default_red;
+				}
+			}
+		}
+	}
+
+	ul {
+		padding-left: 20px;
+		li {
+			&:not(:last-child) {
+				margin-bottom: 5px;
+			}
+		}
+		a {
+			&:before {
+				top: 10px;
+				width: 7px;
+				height: 7px;
+				border-radius: 100%;
+				border: 1px solid #cdcfd0;
+				background-color: #ffffff;
+			}
+			&:hover {
+				&:before {
+					border-color: $default_red;
+					background-color: $default_red;
+				}
+			}
+		}
+	}
+}
+
+.sb_color_checkbox {
+	li {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+	label {
+		color: #7b7d7f;
+		font-size: 17px;
+		font-weight: 700;
+	}
+	input:checked + label {
+		color: #1c1f23;
+	}
+}
+
+
+/* carparts sidebar - start */
+.carparts_sidebar {
+	.sb_widget {
+		&:not(:last-child) {
+			margin-bottom: 40px;
+			padding-bottom: 40px;
+			border-bottom: 1px dotted #cccccc;
+		}
+	}
+
+	.sb_widget_title {
+		font-size: 20px;
+	}
+
+	.price-range-area {
+		.ui-slider-range {
+			background-color: $carparts_red;
+		}
+		.ui-state-default {
+			background-color: $carparts_red;
+		}
+	}
+
+	.sb_category_accordion {
+		.card-header {
+			a {
+				&:not(.collapsed) {
+					&:before {
+						color: $carparts_red;
+					}
+				}
+			}
+		}
+
+		ul {
+			a {
+				&:hover {
+					&:before {
+						border-color: $carparts_red;
+						background-color: $carparts_red;
+					}
+				}
+			}
+		}
+	}
+
+	.sb_color_checkbox {
+		input:checked {
+			border-color: $carparts_red;
+			background-color: $carparts_red;
+		}
+		input:checked + label {
+			color: #1c1f23;
+		}
+	}
+}
+/* carparts sidebar - end */
+
+
+/* electronic sidebar - start */
+.electronic_sidebar {
+	padding: 40px 30px;
+	border: 2px solid #ededed;
+	background-color: #fcfcfc;
+	.sb_widget {
+		&:not(:last-child) {
+			margin-bottom: 50px;
+		}
+	}
+
+	.sb_widget_title {
+		font-size: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #eeeeee;
+	}
+
+	.sb_category_accordion {
+		.card {
+			&:not(:last-child) {
+				margin-bottom: 15px;
+				padding-bottom: 15px;
+				border-bottom: 1px solid #eeeeee;
+			}
+		}
+		.card-header {
+			a:not(.collapsed) {
+				&:before {
+					color: $electronic_blue;
+				}
+			}
+		}
+		a {
+			color: #444444;
+			font-size: 16px;
+			font-weight: 500;
+		}
+		li {
+			a {
+				font-weight: 400;
+				padding-left: 0px;
+				&:hover {
+					color: $electronic_blue;
+				}
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.price-range-area .ui-slider-range {
+		margin: 0px;
+		height: 2px;
+		border-radius: 0px;
+		position: relative;
+		background-color: $electronic_blue;
+	}
+	.price-range-area .slider-range {
+		height: 2px;
+	}
+	.price-range-area {
+		padding: 0px;
+		position: relative;
+	}
+	.price-range-area .price-text input {
+		outline: none;
+		background: transparent;
+	}
+	.price-range-area .ui-state-default {
+		top: -4px;
+		width: 10px;
+		height: 10px;
+		border: none;
+		box-shadow: none;
+		position: absolute;
+		display: inline-block;
+		background-color: $electronic_blue;
+	}
+
+	.checkbox_item {
+		label {
+			font-weight: 400;
+		}
+		input {
+			border-radius: 3px;
+			&:checked {
+				border-color: $electronic_blue;
+				background-color: $electronic_blue;
+			}
+		}
+	}
+}
+/* electronic sidebar - end */
+
+
+/* motorcycle sidebar - start */
+.motorcycle_sidebar {
+	.sb_widget {
+		margin: 0px;
+		padding: 35px;
+		&:not(:last-child) {
+			border-bottom: 1px solid #f0f0f0;
+		}
+	}
+
+	.sb_category {
+		li {
+			border-bottom: none;
+			a {
+				padding-bottom: 0px;
+			}
+		}
+		a {
+			color: #252525;
+			font-size: 17px;
+			font-weight: 700;
+			padding-left: 30px;
+			position: relative;
+			&:hover {
+				color: #8799a3;
+			}
+			&:before {
+				top: 0px;
+				left: 0px;
+				content: '\f0da';
+				font-weight: 700;
+				position: absolute;
+				color: $carparts_red;
+				font-family: 'Font Awesome 5 pro';
+			}
+		}
+	}
+
+	.sb_tags {
+		a {
+			color: #8799a3;
+			font-weight: 700;
+			&:hover {
+				color: #ffffff;
+				border-color: $carparts_red;
+				background-color: $carparts_red;
+			}
+		}
+	}
+}
+/* motorcycle sidebar - end */
+
+
+/* sports sidebar - start */
+.sports_sidebar {
+	.sb_widget {
+		&:not(:last-child) {
+			margin-bottom: 40px;
+			padding-bottom: 40px;
+			border-bottom: 2px solid #f3f4f6;
+		}
+	}
+	.form_item {
+		input {
+			border-color: #f3f4f6;
+			background-color: #f3f4f6;
+			&:focus {
+				border-color: $sports_red;
+			}
+		}
+	}
+
+	.sb_category {
+		li {
+			&:not(:last-child) {
+				margin-bottom: 0px;
+				border-bottom: none;
+			}
+		}
+		a {
+			color: #252525;
+			padding-bottom: 0px;
+			display: inline-block;
+			&:hover {
+				color: $sports_red;
+			}
+		}
+		span {
+			float: none;
+		}
+		i {
+			color: $sports_red;
+		}
+	}
+
+	.price-range-area {
+		.ui-slider-range {
+			background-color: $sports_red;
+		}
+		.ui-state-default {
+			background-color: $sports_red;
+		}
+		.price_filter_btn {
+			border-radius: 2px;
+			background-color: #8799a3;
+			box-shadow: 0px 10px 30px 0px rgba(135, 153, 163, 0.5);
+		}
+	}
+
+	.sb_tags {
+		a {
+			&:hover {
+				color: #ffffff;
+				border-color: $sports_red;
+				background-color: $sports_red;
+				box-shadow: 0px 10px 30px 0px rgba(255, 63, 63, 0.5);
+			}
+		}
+	}
+}
+/* sports sidebar - end */
+
+/* sidebar - end
+==================================================================================================== */

@@ -1,0 +1,66 @@
+/* home modern minimal - start
+==================================================================================================== */
+
+/* home minimal reset - start */
+.home_minimal {
+	color: #030a0b;
+	font-family: 'Poppins', sans-serif;
+
+	h1,h2,h3,h4,h5,h6 {
+		color: #030a0b;
+		font-family: 'Jost', sans-serif;
+	}
+
+	.custom_btn {
+		font-size: 14px;
+		font-weight: 500;
+		padding: 10px 45px;
+		letter-spacing: 1px;
+	}
+}
+/* home minimal reset - end */
+
+
+/* minimal slider - start */
+.minimal_slider {
+	.carousel_nav {
+		button {
+			border-radius: 100%;
+			&:nth-child(1) {
+				left: 30px;
+			}
+			&:nth-child(2) {
+				right: 30px;
+			}
+		}
+	}
+	.item {
+		min-height: 100vh;
+	}
+
+	.slider_content {
+		max-width: 680px;
+	}
+
+	h4 {
+		line-height: 1;
+		font-size: 36px;
+		font-weight: 600;
+		color: $modern_red;
+		margin-bottom: 15px;
+	}
+	h3 {
+		line-height: 1;
+		font-size: 80px;
+		font-weight: 800;
+		margin-bottom: 25px;
+	}
+	p {
+		font-size: 20px;
+		margin-bottom: 40px;
+	}
+}
+/* minimal slider - end */
+
+/* home modern minimal - end
+==================================================================================================== */
