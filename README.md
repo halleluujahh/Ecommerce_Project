@@ -1,29 +1,11 @@
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2fd81c1 (u)
 # Ecommerce-GroupProject
-
-
-
 
 ## Technologies
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 **Client:** JQuery, HTML, CSS, JS, Ajax, Bootstrap, SMTP, Oauth2 Google
 <br>
 **Server:** Java Servlet, Tomcat 8.5, Lombok, SQL Server
-=======
-**Client:** JQuery, HTML, CSS, JS, Ajax, Bootstrap, Google Service API
-=======
-**Server:** Java Servlet, Tomcat 8.5, Lombok, SQL Server
->>>>>>> b4141e3 (u)
-
-**Client:** JQuery, HTML, CSS, JS, Ajax, Bootstrap, SMTP, Oauth2 Google
-<br>
->>>>>>> 2fd81c1 (u)
 
 
 
