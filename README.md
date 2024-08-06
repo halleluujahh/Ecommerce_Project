@@ -1,5 +1,5 @@
 
-# Ecommerce-GroupProject
+# Ecommerce_Project
 
 ## Technologies
 
