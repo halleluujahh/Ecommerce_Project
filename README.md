@@ -200,6 +200,10 @@ GET /ForgotPassword
 - Google OAuth2: create OAuth client (Web) in Google Cloud Console, configure Authorized redirect URIs to point to your callback (e.g., `http://localhost:8080/SWP391_SE1754_G1/login-google`). Store Client ID/Secret in a secure config and wire to your servlet that processes the callback.
 - SMTP (Gmail): the app uses Gmail SMTP (`smtp.gmail.com:587`, TLS). Replace hardcoded credentials with secure configuration and app passwords. See email sending in `ForgotPassword`.
 
+## Contributing
+
+Feel free to contribute by forking this repository, making some changes, and submitting pull requests.
+
 ## License
 Source code is for SWP391 coursework
 
