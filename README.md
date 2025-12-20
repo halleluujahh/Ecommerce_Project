@@ -11,6 +11,13 @@ This project is a Java MVC web application using Servlet/JSP, JSTL, Ant (NetBean
 - Client: jQuery, HTML, CSS, JS, Ajax, Bootstrap
 - Integrations: SMTP (email), Google OAuth2
 
+## Features
+
+- CRUD data
+- Admin Dashboard
+- Seller Dashboard
+- Online shopping
+
 ## Requirements
 - Windows (verified on Windows 10/11)
 - `JAVA_HOME` pointing to a JDK
@@ -138,14 +145,6 @@ For undeploy, use Tomcat Manager UI or adapt [nbproject/ant-deploy.xml](nbprojec
 
 ---
 
-# Ecommerce_Project
-
-## Technologies
-
-**Client:** jQuery, HTML, CSS, JS, Ajax, Bootstrap, SMTP, Google OAuth2
-<br>
-**Server:** Java Servlet, Tomcat 8.5, Lombok, SQL Server
-
 ## API Reference
 
 ### Google Login (example)
@@ -188,13 +187,6 @@ GET /ForgotPassword
 - Login and registration are handled by `AuthentController` mapped in [web/WEB-INF/web.xml](web/WEB-INF/web.xml#L23-L34) and [web/WEB-INF/web.xml](web/WEB-INF/web.xml#L52-L63).
 - Forgot password is handled by `ForgotPassword` mapped in [web/WEB-INF/web.xml](web/WEB-INF/web.xml#L39-L45).
 
-## Features
-
-- CRUD data
-- Admin Dashboard
-- Seller Dashboard
-- Online shopping
-
 ## Setup Notes (OAuth2 & SMTP)
 
 - Google OAuth2: create OAuth client (Web) in Google Cloud Console, configure Authorized redirect URIs to point to your callback (e.g., `http://localhost:8080/SWP391_SE1754_G1/login-google`). Store Client ID/Secret in a secure config and wire to your servlet that processes the callback.
@@ -205,7 +197,8 @@ GET /ForgotPassword
 Feel free to contribute by forking this repository, making some changes, and submitting pull requests.
 
 ## License
-Source code is for SWP391 coursework
+
+This project is developed for educational purposes.
 
 ## Authors
 
